@@ -26,25 +26,14 @@ F 3 "" H 1750 1650 60  0000 C CNN
 $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
-U 1 1 5D91D523
-P 6800 2100
-F 0 "U1" H 6800 2467 50  0000 C CNN
-F 1 "TL074" H 6800 2376 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 6800 2100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6800 2100 50  0001 C CNN
-	1    6800 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL074 U1
 U 2 1 5D91D69A
 P 8800 2200
-F 0 "U1" H 8800 2567 50  0000 C CNN
-F 1 "TL074" H 8800 2476 50  0000 C CNN
+F 0 "U1" H 8800 1833 50  0000 C CNN
+F 1 "TL074" H 8800 1924 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 8800 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8800 2200 50  0001 C CNN
 	2    8800 2200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
@@ -167,14 +156,6 @@ F 3 "" H 8300 2400 50  0001 C CNN
 	1    8300 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8500 2300 8300 2300
-Wire Wire Line
-	8300 2300 8300 2400
-Wire Wire Line
-	6500 2200 6400 2200
-Wire Wire Line
-	6400 2200 6400 2400
 $Comp
 L Connector:AudioJack2_Switch J1
 U 1 1 5D91F895
@@ -235,29 +216,25 @@ $EndComp
 $Comp
 L power:+12V #PWR0108
 U 1 1 5D922076
-P 5500 2700
-F 0 "#PWR0108" H 5500 2550 50  0001 C CNN
-F 1 "+12V" V 5515 2828 50  0000 L CNN
-F 2 "" H 5500 2700 50  0001 C CNN
-F 3 "" H 5500 2700 50  0001 C CNN
-	1    5500 2700
-	0    1    1    0   
+P 4700 2700
+F 0 "#PWR0108" H 4700 2550 50  0001 C CNN
+F 1 "+12V" V 4715 2828 50  0000 L CNN
+F 2 "" H 4700 2700 50  0001 C CNN
+F 3 "" H 4700 2700 50  0001 C CNN
+	1    4700 2700
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:-12V #PWR0109
 U 1 1 5D9220B9
-P 4750 2700
-F 0 "#PWR0109" H 4750 2800 50  0001 C CNN
-F 1 "-12V" V 4765 2828 50  0000 L CNN
-F 2 "" H 4750 2700 50  0001 C CNN
-F 3 "" H 4750 2700 50  0001 C CNN
-	1    4750 2700
-	0    -1   -1   0   
+P 5600 2700
+F 0 "#PWR0109" H 5600 2800 50  0001 C CNN
+F 1 "-12V" V 5615 2828 50  0000 L CNN
+F 2 "" H 5600 2700 50  0001 C CNN
+F 3 "" H 5600 2700 50  0001 C CNN
+	1    5600 2700
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4750 2700 5000 2700
-Wire Wire Line
-	5300 2700 5500 2700
 $Comp
 L Device:R R2
 U 1 1 5D922A8B
@@ -278,8 +255,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 2400 6100 2000
 Connection ~ 6100 2000
-Wire Wire Line
-	6100 2000 6500 2000
 $Comp
 L Device:R_POT R7
 U 1 1 5D924803
@@ -326,9 +301,6 @@ Wire Wire Line
 	8600 1650 8300 1650
 Wire Wire Line
 	8300 1650 8300 2100
-Connection ~ 8300 2100
-Wire Wire Line
-	8300 2100 8500 2100
 Wire Wire Line
 	8900 1650 9150 1650
 Wire Wire Line
@@ -403,11 +375,6 @@ F 3 "" H 9950 3150 50  0001 C CNN
 	1    9950 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7100 2100 7150 2100
-Connection ~ 9150 2200
-Wire Wire Line
-	9150 2200 9100 2200
 Wire Wire Line
 	9150 2200 9500 2200
 $Comp
@@ -535,23 +502,23 @@ $Comp
 L Amplifier_Operational:TL074 U1
 U 3 1 5D97E513
 P 6750 4800
-F 0 "U1" H 6750 5167 50  0000 C CNN
-F 1 "TL074" H 6750 5076 50  0000 C CNN
+F 0 "U1" H 6750 4433 50  0000 C CNN
+F 1 "TL074" H 6750 4524 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 6750 4800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6750 4800 50  0001 C CNN
 	3    6750 4800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TL074 U1
 U 4 1 5D97E519
 P 8750 4900
-F 0 "U1" H 8750 5267 50  0000 C CNN
-F 1 "TL074" H 8750 5176 50  0000 C CNN
+F 0 "U1" H 8750 4533 50  0000 C CNN
+F 1 "TL074" H 8750 4624 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 8750 4900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8750 4900 50  0001 C CNN
 	4    8750 4900
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0114
@@ -579,10 +546,6 @@ Wire Wire Line
 	8450 5000 8250 5000
 Wire Wire Line
 	8250 5000 8250 5100
-Wire Wire Line
-	6450 4900 6350 4900
-Wire Wire Line
-	6350 4900 6350 5100
 $Comp
 L Connector:AudioJack2_Switch J5
 U 1 1 5D97E52F
@@ -643,29 +606,25 @@ $EndComp
 $Comp
 L power:+12V #PWR0117
 U 1 1 5D97E54E
-P 5450 5400
-F 0 "#PWR0117" H 5450 5250 50  0001 C CNN
-F 1 "+12V" V 5465 5528 50  0000 L CNN
-F 2 "" H 5450 5400 50  0001 C CNN
-F 3 "" H 5450 5400 50  0001 C CNN
-	1    5450 5400
-	0    1    1    0   
+P 4600 5400
+F 0 "#PWR0117" H 4600 5250 50  0001 C CNN
+F 1 "+12V" V 4615 5528 50  0000 L CNN
+F 2 "" H 4600 5400 50  0001 C CNN
+F 3 "" H 4600 5400 50  0001 C CNN
+	1    4600 5400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:-12V #PWR0118
 U 1 1 5D97E554
-P 4700 5400
-F 0 "#PWR0118" H 4700 5500 50  0001 C CNN
-F 1 "-12V" V 4715 5528 50  0000 L CNN
-F 2 "" H 4700 5400 50  0001 C CNN
-F 3 "" H 4700 5400 50  0001 C CNN
-	1    4700 5400
-	0    -1   -1   0   
+P 5600 5400
+F 0 "#PWR0118" H 5600 5500 50  0001 C CNN
+F 1 "-12V" V 5615 5528 50  0000 L CNN
+F 2 "" H 5600 5400 50  0001 C CNN
+F 3 "" H 5600 5400 50  0001 C CNN
+	1    5600 5400
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4700 5400 4950 5400
-Wire Wire Line
-	5250 5400 5450 5400
 $Comp
 L Device:R R13
 U 1 1 5D97E55C
@@ -686,8 +645,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 5100 6050 4700
 Connection ~ 6050 4700
-Wire Wire Line
-	6050 4700 6450 4700
 $Comp
 L Device:R_POT R14
 U 1 1 5D97E568
@@ -811,8 +768,6 @@ F 3 "" H 9900 5850 50  0001 C CNN
 	1    9900 5850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7050 4800 7100 4800
 Connection ~ 9100 4900
 Wire Wire Line
 	9100 4900 9050 4900
@@ -970,10 +925,10 @@ Connection ~ 2650 1450
 Wire Wire Line
 	2650 1450 3400 1450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0123
 U 1 1 5D9C92D6
 P 2650 1150
-F 0 "#PWR?" H 2650 900 50  0001 C CNN
+F 0 "#PWR0123" H 2650 900 50  0001 C CNN
 F 1 "GND" H 2655 977 50  0000 C CNN
 F 2 "" H 2650 1150 50  0001 C CNN
 F 3 "" H 2650 1150 50  0001 C CNN
@@ -981,14 +936,59 @@ F 3 "" H 2650 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0124
 U 1 1 5D9C9379
 P 2650 2150
-F 0 "#PWR?" H 2650 1900 50  0001 C CNN
+F 0 "#PWR0124" H 2650 1900 50  0001 C CNN
 F 1 "GND" H 2655 1977 50  0000 C CNN
 F 2 "" H 2650 2150 50  0001 C CNN
 F 3 "" H 2650 2150 50  0001 C CNN
 	1    2650 2150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4700 2700 5000 2700
+Wire Wire Line
+	5300 2700 5600 2700
+Wire Wire Line
+	4600 5400 4950 5400
+Wire Wire Line
+	5250 5400 5600 5400
+$Comp
+L Amplifier_Operational:TL074 U1
+U 1 1 5D91D523
+P 6800 2100
+F 0 "U1" H 6800 1733 50  0000 C CNN
+F 1 "TL074" H 6800 1824 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_LongPads" H 6800 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6800 2100 50  0001 C CNN
+	1    6800 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6100 2000 6500 2000
+Wire Wire Line
+	6400 2200 6400 2400
+Wire Wire Line
+	6400 2200 6500 2200
+Wire Wire Line
+	7100 2100 7150 2100
+Wire Wire Line
+	8300 2100 8500 2100
+Connection ~ 8300 2100
+Wire Wire Line
+	8500 2300 8300 2300
+Wire Wire Line
+	8300 2300 8300 2400
+Wire Wire Line
+	9100 2200 9150 2200
+Connection ~ 9150 2200
+Wire Wire Line
+	6050 4700 6450 4700
+Wire Wire Line
+	6450 4900 6350 4900
+Wire Wire Line
+	6350 4900 6350 5100
+Wire Wire Line
+	7050 4800 7100 4800
 $EndSCHEMATC
