@@ -6,9 +6,9 @@ Interface
 * (JACK) `OUT F` is a digital output
 * (JACK) `Ext Clock In` takes the clock signal to an INTERRUPT (`NC` <= `Int Clock Out`)
 * (JACK) `Int Clock Out` gives the internally generated clock signal
-* (JACK+KNOBS) `Clock Rate In` is an analog signal where 0-5V means 0.01s to 10s
+* (JACK+KNOBS) `Clock Rate In` is an analog signal where 0-5V means 0.01s to 10s or something
 * (JACK+KNOBS) `Ext Position In` is an analog signal where 0-5V means `POSITION` 0-15
-* (SPDT) `Sequencing Mode Select` controls `SEQUENCING MODE` (Top = HIGH = Step, Bottom = LOW = Non Linear)
+* (SPDT) `Sequencing Mode Select` controls `SEQUENCING MODE` (_Top_ = `HIGH` = _Step_, _Bottom_ = `LOW` = _Non Linear_)
 * (SPDT+GND) `Digital Out Select 0-15` Selects between `OUT E`, none, and `OUT F` for each `POSITION`
 * (SPDT `Direction Select` Selects `DIRECTION` between (_Top_ = `HIGH` = _Forwards_, _Bottom_ = `LOW` = _Backwards_)
 * (JACK) `Ext Direction In` same as `Direction Select` (`NC` => Use `Direction Select`)
