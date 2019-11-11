@@ -1,0 +1,402 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7400 7500 0    50   ~ 0
+Mega Sequencer Brain
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U?
+U 1 1 5DC9C7AB
+P 1900 5900
+F 0 "U?" H 1259 5946 50  0000 R CNN
+F 1 "ATmega328P-PU" H 1259 5855 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 1900 5900 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1900 5900 50  0001 C CNN
+	1    1900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4700 2800 4700
+Wire Wire Line
+	2500 4800 2800 4800
+Wire Wire Line
+	2500 4900 2800 4900
+Wire Wire Line
+	2500 5000 2800 5000
+Wire Wire Line
+	2500 5100 2800 5100
+Wire Wire Line
+	2500 5200 2800 5200
+Wire Wire Line
+	2500 5300 2800 5300
+Wire Wire Line
+	2500 5400 2800 5400
+Wire Wire Line
+	2500 5600 2800 5600
+Wire Wire Line
+	2500 5700 2800 5700
+Wire Wire Line
+	2500 5800 2800 5800
+Wire Wire Line
+	2500 5900 2800 5900
+Wire Wire Line
+	2500 6000 2800 6000
+Wire Wire Line
+	2500 6100 2800 6100
+Wire Wire Line
+	2500 6200 2800 6200
+Wire Wire Line
+	2500 6400 2800 6400
+Wire Wire Line
+	2500 6500 2800 6500
+Wire Wire Line
+	2500 6600 2800 6600
+Wire Wire Line
+	2500 6700 2800 6700
+Wire Wire Line
+	2500 6800 2800 6800
+Wire Wire Line
+	2500 6900 2800 6900
+Wire Wire Line
+	2500 7000 2800 7000
+Wire Wire Line
+	2500 7100 2800 7100
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC9E011
+P 1200 4700
+F 0 "#PWR?" H 1200 4550 50  0001 C CNN
+F 1 "+5V" V 1215 4828 50  0000 L CNN
+F 2 "" H 1200 4700 50  0001 C CNN
+F 3 "" H 1200 4700 50  0001 C CNN
+	1    1200 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC9E02E
+P 1900 4300
+F 0 "#PWR?" H 1900 4150 50  0001 C CNN
+F 1 "+5V" H 1750 4350 50  0000 C CNN
+F 2 "" H 1900 4300 50  0001 C CNN
+F 3 "" H 1900 4300 50  0001 C CNN
+	1    1900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC9E03C
+P 2000 4300
+F 0 "#PWR?" H 2000 4150 50  0001 C CNN
+F 1 "+5V" H 2150 4350 50  0000 C CNN
+F 2 "" H 2000 4300 50  0001 C CNN
+F 3 "" H 2000 4300 50  0001 C CNN
+	1    2000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4300 2000 4400
+Wire Wire Line
+	1900 4300 1900 4400
+Wire Wire Line
+	1200 4700 1300 4700
+$Comp
+L power:GND #PWR?
+U 1 1 5DC9EA3F
+P 1900 7500
+F 0 "#PWR?" H 1900 7250 50  0001 C CNN
+F 1 "GND" H 1905 7327 50  0000 C CNN
+F 2 "" H 1900 7500 50  0001 C CNN
+F 3 "" H 1900 7500 50  0001 C CNN
+	1    1900 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 7400 1900 7500
+Text Label 2700 4700 0    50   ~ 0
+D8
+Text Label 2700 4800 0    50   ~ 0
+D9
+Text Label 2650 4900 0    50   ~ 0
+D10
+Text Label 2650 5000 0    50   ~ 0
+D11-MOSI
+Text Label 2650 5100 0    50   ~ 0
+D12-MISO
+Text Label 2650 5200 0    50   ~ 0
+D13-SCK
+Text Label 2650 5300 0    50   ~ 0
+XTAL1
+Text Label 2650 5400 0    50   ~ 0
+XTAL2
+Text Label 2700 5600 0    50   ~ 0
+A0
+Text Label 2700 5700 0    50   ~ 0
+A1
+Text Label 2700 5800 0    50   ~ 0
+A2
+Text Label 2700 5900 0    50   ~ 0
+A3
+Text Label 2700 6000 0    50   ~ 0
+A4
+Text Label 2700 6100 0    50   ~ 0
+A5
+Text Label 2650 6200 0    50   ~ 0
+RST
+Text Label 2700 6400 0    50   ~ 0
+D0-RX
+Text Label 2700 6500 0    50   ~ 0
+D1-TX
+Text Label 2700 6600 0    50   ~ 0
+D2-INT0
+Text Label 2700 6700 0    50   ~ 0
+D3-INT1
+Text Label 2700 6800 0    50   ~ 0
+D4
+Text Label 2700 6900 0    50   ~ 0
+D5
+Text Label 2700 7000 0    50   ~ 0
+D6
+Text Label 2700 7100 0    50   ~ 0
+D7
+$Comp
+L eurocad:EURO_PWR_2x5 J?
+U 1 1 5DC9F3B7
+P 4100 7350
+F 0 "J?" H 4100 7797 60  0000 C CNN
+F 1 "EURO_PWR_2x5" H 4100 7691 60  0000 C CNN
+F 2 "" H 4100 7350 60  0000 C CNN
+F 3 "" H 4100 7350 60  0000 C CNN
+	1    4100 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC9F565
+P 4750 7350
+F 0 "#PWR?" H 4750 7100 50  0001 C CNN
+F 1 "GND" V 4755 7222 50  0000 R CNN
+F 2 "" H 4750 7350 50  0001 C CNN
+F 3 "" H 4750 7350 50  0001 C CNN
+	1    4750 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC9F57A
+P 3450 7350
+F 0 "#PWR?" H 3450 7100 50  0001 C CNN
+F 1 "GND" V 3455 7222 50  0000 R CNN
+F 2 "" H 3450 7350 50  0001 C CNN
+F 3 "" H 3450 7350 50  0001 C CNN
+	1    3450 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 7250 3550 7250
+Wire Wire Line
+	3550 7250 3550 7350
+Connection ~ 3550 7350
+Wire Wire Line
+	3550 7350 3450 7350
+Wire Wire Line
+	3650 7450 3550 7450
+Wire Wire Line
+	3550 7450 3550 7350
+Wire Wire Line
+	4550 7250 4650 7250
+Wire Wire Line
+	4650 7250 4650 7350
+Wire Wire Line
+	4650 7350 4750 7350
+Wire Wire Line
+	4550 7350 4650 7350
+Connection ~ 4650 7350
+Wire Wire Line
+	4550 7450 4650 7450
+Wire Wire Line
+	4650 7450 4650 7350
+Wire Wire Line
+	3650 7350 3550 7350
+$Comp
+L power:+12V #PWR?
+U 1 1 5DCA268E
+P 4750 7150
+F 0 "#PWR?" H 4750 7000 50  0001 C CNN
+F 1 "+12V" V 4765 7278 50  0000 L CNN
+F 2 "" H 4750 7150 50  0001 C CNN
+F 3 "" H 4750 7150 50  0001 C CNN
+	1    4750 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5DCA26A6
+P 3450 7150
+F 0 "#PWR?" H 3450 7000 50  0001 C CNN
+F 1 "+12V" V 3465 7278 50  0000 L CNN
+F 2 "" H 3450 7150 50  0001 C CNN
+F 3 "" H 3450 7150 50  0001 C CNN
+	1    3450 7150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5DCA270A
+P 4750 7550
+F 0 "#PWR?" H 4750 7650 50  0001 C CNN
+F 1 "-12V" V 4765 7678 50  0000 L CNN
+F 2 "" H 4750 7550 50  0001 C CNN
+F 3 "" H 4750 7550 50  0001 C CNN
+	1    4750 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5DCA2722
+P 3450 7550
+F 0 "#PWR?" H 3450 7650 50  0001 C CNN
+F 1 "-12V" V 3465 7678 50  0000 L CNN
+F 2 "" H 3450 7550 50  0001 C CNN
+F 3 "" H 3450 7550 50  0001 C CNN
+	1    3450 7550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 7150 3650 7150
+Wire Wire Line
+	3450 7550 3650 7550
+Wire Wire Line
+	4550 7150 4750 7150
+Wire Wire Line
+	4550 7550 4750 7550
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5DCA5C7F
+P 6300 4200
+F 0 "J?" H 6121 4133 50  0000 R CNN
+F 1 "RESET_IN" H 6121 4224 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 6300 4200 50  0001 C CNN
+F 3 "~" H 6300 4200 50  0001 C CNN
+	1    6300 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5DCA5E63
+P 5050 4700
+F 0 "SW?" H 5050 4985 50  0000 C CNN
+F 1 "RESET/ZERO" H 5050 4894 50  0000 C CNN
+F 2 "" H 5050 4700 50  0001 C CNN
+F 3 "" H 5050 4700 50  0001 C CNN
+	1    5050 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DCA6FFF
+P 4750 4700
+F 0 "#PWR?" H 4750 4550 50  0001 C CNN
+F 1 "+5V" H 4600 4750 50  0000 C CNN
+F 2 "" H 4750 4700 50  0001 C CNN
+F 3 "" H 4750 4700 50  0001 C CNN
+	1    4750 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 4700 4850 4700
+Text Notes 4750 5050 0    50   ~ 0
+(ON) OFF (ON)
+Wire Wire Line
+	5250 4600 5350 4600
+Wire Wire Line
+	5250 4800 6000 4800
+Text Label 5600 4600 0    50   ~ 0
+SEQ_RESET
+Text Label 5600 4800 0    50   ~ 0
+SEQ_ZERO
+$Comp
+L Device:D D?
+U 1 1 5DCA8CA7
+P 5600 4200
+F 0 "D?" H 5600 4416 50  0000 C CNN
+F 1 "D" H 5600 4325 50  0000 C CNN
+F 2 "" H 5600 4200 50  0001 C CNN
+F 3 "~" H 5600 4200 50  0001 C CNN
+	1    5600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4200 5350 4200
+Wire Wire Line
+	5350 4200 5350 4600
+Connection ~ 5350 4600
+Wire Wire Line
+	5350 4600 6000 4600
+$Comp
+L Device:R R?
+U 1 1 5DCAB65F
+P 5850 3950
+F 0 "R?" H 5920 3996 50  0000 L CNN
+F 1 "10K" H 5920 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5780 3950 50  0001 C CNN
+F 3 "~" H 5850 3950 50  0001 C CNN
+	1    5850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCAB6EF
+P 5850 3750
+F 0 "#PWR?" H 5850 3500 50  0001 C CNN
+F 1 "GND" H 5855 3577 50  0000 C CNN
+F 2 "" H 5850 3750 50  0001 C CNN
+F 3 "" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 4200 5750 4200
+Wire Wire Line
+	5850 3800 5850 3750
+Wire Wire Line
+	5850 4200 5850 4100
+Wire Wire Line
+	6100 4200 5850 4200
+Connection ~ 5850 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5DCAFD9F
+P 5950 4300
+F 0 "#PWR?" H 5950 4050 50  0001 C CNN
+F 1 "GND" V 5955 4172 50  0000 R CNN
+F 2 "" H 5950 4300 50  0001 C CNN
+F 3 "" H 5950 4300 50  0001 C CNN
+	1    5950 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 4300 5950 4300
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5DCB0AEE
+P 8950 4200
+F 0 "J?" H 8771 4133 50  0000 R CNN
+F 1 "EXT_CLOCK_IN" H 8771 4224 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 8950 4200 50  0001 C CNN
+F 3 "~" H 8950 4200 50  0001 C CNN
+	1    8950 4200
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
