@@ -1,17 +1,19 @@
 Interface
 ---------
-
-* (JACK) `OUT A-D` are analog outputs
-* (JACK) `OUT E` is a digital output (NC => `Reset In`)
-* (JACK) `OUT F` is a digital output
-* (JACK) `Ext Clock In` takes the clock signal to an INTERRUPT (`NC` <= `Int Clock Out`)
-* (JACK) `Int Clock Out` gives the internally generated clock signal
-* (JACK+KNOBS) `Clock Rate In` is an analog signal where 0-5V means 0.01s to 10s or something
-* (JACK+KNOBS) `Ext Position In` is an analog signal where 0-5V means `POSITION` 0-15
-* (SPDT) `Sequencing Mode Select` controls `SEQUENCING MODE` (_Top_ = `HIGH` = _Step_, _Bottom_ = `LOW` = _Non Linear_)
-* (SPDT+GND) `Digital Out Select 0-15` Selects between `OUT E`, none, and `OUT F` for each `POSITION`
-* (SPDT `Direction Select` Selects `DIRECTION` between (_Top_ = `HIGH` = _Forwards_, _Bottom_ = `LOW` = _Backwards_)
-* (JACK) `Ext Direction In` same as `Direction Select` (`NC` => Use `Direction Select`)
+* Outputs
+  * (JACK) `OUT A-D` are analog outputs
+  * (JACK) `OUT E` is a digital output (NC => `Reset In`)
+  * (JACK) `OUT F` is a digital output
+  * (SPDT+GND) `Digital Out Select 0-15` Selects between `OUT E`, none, and `OUT F` for each `POSITION`
+* Clock
+  * (JACK) `Ext Clock In` takes the clock signal to an INTERRUPT (`NC` <= `Int Clock Out`)
+  * (JACK) `Int Clock Out` gives the internally generated clock signal
+  * (JACK+KNOBS) `Clock Rate In` is an analog signal where 0-5V means 0.01s to 10s or something
+* Step Mode
+  * (SPDT `Direction Select` Selects `DIRECTION` between (_Top_ = `HIGH` = _Forwards_, _Bottom_ = `LOW` = _Backwards_)
+  * (JACK) `Ext Direction In` same as `Direction Select` (`NC` => Use `Direction Select`)
+* Non Linear Mode
+  * (JACK+KNOBS) `Ext Position In` is an analog signal where 0-5V means `POSITION` 0-15 (`NC` means _Step Mode_)
 
 Notes:
 1. `OUT A-D` are independent
@@ -26,8 +28,12 @@ Internal/External Clock (decides what triggers a `CLOCK PULSE`):
 2. External (cable connected to `Ext Clock In`)
 
 Sequencing Modes:
-1. Step (`POSITION` moves 1 step in `DIRECTION` for each `CLOCK PULSE`, roll-over applies)
-2. Non-Linear (`POSITION` is instantly set to `Ext Position In` for each `CLOCK PULSE`)
+1. _Step Mode_ (`POSITION` moves 1 step in `DIRECTION` for each `CLOCK PULSE`, roll-over applies)
+2. _Non Linear Mode_ (`POSITION` is instantly set to `Ext Position In` for each `CLOCK PULSE`)
+
+Sequencing Mode is determined by whether `Ext Position In` is connected or not.
+1. `NC` means _Step Mode_
+2. `Connected` means _Non Linear Mode_
 
 Directions (for Step mode):
 1. Forwards
@@ -46,6 +52,8 @@ Let any function control the order of the steps. For every `CLOCK PULSE`, the
 `Ext Position In` CV will be read and transformed to a value 0-15 witch will
 be the new `POSITION`.
 
+Connecting an `OUT x` to `Ext Position In` lets you create an arbitrary step
+sequence.
 
 Variable Time Sequencing
 ------------------------
