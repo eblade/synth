@@ -19,6 +19,11 @@ Notes:
 1. `OUT A-D` are independent
 2. `OUT E` and `OUT F` are selectable, one per `POSITION`
 
+Ideas
+-----
+
+* At least one of the analog outputs should have a possibility to add an external signal, for
+  allowing higher hierarchy of sequencing (for chord progressions).
 
 Modes of Operations
 -------------------
