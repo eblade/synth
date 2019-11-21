@@ -1,5 +1,5 @@
-Interface
----------
+= Interface =
+
 * Outputs
   * (JACK) `OUT A-D` are analog outputs
   * (JACK) `OUT E` is a digital output (NC => `Reset In`)
@@ -10,23 +10,22 @@ Interface
   * (JACK) `Int Clock Out` gives the internally generated clock signal
   * (JACK+KNOBS) `Clock Rate In` is an analog signal where 0-5V means 0.01s to 10s or something
 * Step Mode
-  * (SPDT `Direction Select` Selects `DIRECTION` between (_Top_ = `HIGH` = _Forwards_, _Bottom_ = `LOW` = _Backwards_)
+  * (SPDT) `Direction Select` Selects `DIRECTION` between (_Top_ = `HIGH` = _Forwards_, _Bottom_ = `LOW` = _Backwards_)
   * (JACK) `Ext Direction In` same as `Direction Select` (`NC` => Use `Direction Select`)
 * Non Linear Mode
   * (JACK+KNOBS) `Ext Position In` is an analog signal where 0-5V means `POSITION` 0-15 (`NC` means _Step Mode_)
+  * (JACKS+SPDT) `Reset/Zero` 1 Jack trigs `Reset`, 1 `Zero`. Both also via (ON) OFF (ON) SPDT switch.
 
 Notes:
 1. `OUT A-D` are independent
 2. `OUT E` and `OUT F` are selectable, one per `POSITION`
 
-Ideas
------
+= Ideas =
 
 * At least one of the analog outputs should have a possibility to add an external signal, for
   allowing higher hierarchy of sequencing (for chord progressions).
 
-Modes of Operations
--------------------
+= Modes of Operations =
 
 Internal/External Clock (decides what triggers a `CLOCK PULSE`):
 1. Internal (nothing connected to `Ext Clock In`)
@@ -44,14 +43,12 @@ Directions (for Step mode):
 1. Forwards
 2. Backwards
 
-Step Sequencing
----------------
+= Step Sequencing =
 
 The normal mode of operation. `POSITION` will shift one step in the direction
 set by the `DIRECTION` everytime there is a `CLOCK PULSE`.
 
-Non Linear Sequencing
----------------------
+= Non Linear Sequencing =
 
 Let any function control the order of the steps. For every `CLOCK PULSE`, the
 `Ext Position In` CV will be read and transformed to a value 0-15 witch will
@@ -60,8 +57,7 @@ be the new `POSITION`.
 Connecting an `OUT x` to `Ext Position In` lets you create an arbitrary step
 sequence.
 
-Variable Time Sequencing
-------------------------
+= Variable Time Sequencing =
 
 Consider the following patch:
 
@@ -78,15 +74,20 @@ CV generating module.
 
 Also consider that this will work in _Non Linear_ mode as well.
 
-Pinout
-------
+
+= Reset/Zero =
+
+`Reset` means goto step 0.
+`Zero` means goto no step, but next step is 0 (or 15, if `Direction` is `Backwards`).
+
+
+= Pinout =
 
 Sequencer Reset
 Sequencer Zero
 
 
 
-Shift registers
----------------
+= Shift registers =
 
 https://arduino.stackexchange.com/questions/117/is-there-a-way-to-have-more-than-14-output-pins-on-arduino
