@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+LIBS:brain-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L eurocad:EURO_PWR_2x5 J?
+U 1 1 5E353385
+P 1700 7250
+AR Path="/5E353385" Ref="J?"  Part="1" 
+AR Path="/5E3019D8/5E353385" Ref="J1"  Part="1" 
+F 0 "J1" H 1700 7697 60  0000 C CNN
+F 1 "EURO_PWR_2x5" H 1700 7591 60  0000 C CNN
+F 2 "" H 1700 7250 60  0000 C CNN
+F 3 "" H 1700 7250 60  0000 C CNN
+	1    1700 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E35338C
+P 2350 7250
+AR Path="/5E35338C" Ref="#PWR?"  Part="1" 
+AR Path="/5E3019D8/5E35338C" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 2350 7000 50  0001 C CNN
+F 1 "GND" V 2355 7122 50  0000 R CNN
+F 2 "" H 2350 7250 50  0001 C CNN
+F 3 "" H 2350 7250 50  0001 C CNN
+	1    2350 7250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E353392
+P 1050 7250
+AR Path="/5E353392" Ref="#PWR?"  Part="1" 
+AR Path="/5E3019D8/5E353392" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 1050 7000 50  0001 C CNN
+F 1 "GND" V 1055 7122 50  0000 R CNN
+F 2 "" H 1050 7250 50  0001 C CNN
+F 3 "" H 1050 7250 50  0001 C CNN
+	1    1050 7250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 7150 1150 7150
+Wire Wire Line
+	1150 7150 1150 7250
+Connection ~ 1150 7250
+Wire Wire Line
+	1150 7250 1050 7250
+Wire Wire Line
+	1250 7350 1150 7350
+Wire Wire Line
+	1150 7350 1150 7250
+Wire Wire Line
+	2150 7150 2250 7150
+Wire Wire Line
+	2250 7150 2250 7250
+Wire Wire Line
+	2250 7250 2350 7250
+Wire Wire Line
+	2150 7250 2250 7250
+Connection ~ 2250 7250
+Wire Wire Line
+	2150 7350 2250 7350
+Wire Wire Line
+	2250 7350 2250 7250
+Wire Wire Line
+	1250 7250 1150 7250
+$Comp
+L power:+12V #PWR?
+U 1 1 5E3533A6
+P 2350 7050
+AR Path="/5E3533A6" Ref="#PWR?"  Part="1" 
+AR Path="/5E3019D8/5E3533A6" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 2350 6900 50  0001 C CNN
+F 1 "+12V" V 2365 7178 50  0000 L CNN
+F 2 "" H 2350 7050 50  0001 C CNN
+F 3 "" H 2350 7050 50  0001 C CNN
+	1    2350 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5E3533AC
+P 1050 7050
+AR Path="/5E3533AC" Ref="#PWR?"  Part="1" 
+AR Path="/5E3019D8/5E3533AC" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 1050 6900 50  0001 C CNN
+F 1 "+12V" V 1065 7178 50  0000 L CNN
+F 2 "" H 1050 7050 50  0001 C CNN
+F 3 "" H 1050 7050 50  0001 C CNN
+	1    1050 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E3533B2
+P 2350 7450
+AR Path="/5E3533B2" Ref="#PWR?"  Part="1" 
+AR Path="/5E3019D8/5E3533B2" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 2350 7550 50  0001 C CNN
+F 1 "-12V" V 2365 7578 50  0000 L CNN
+F 2 "" H 2350 7450 50  0001 C CNN
+F 3 "" H 2350 7450 50  0001 C CNN
+	1    2350 7450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5E3533B8
+P 1050 7450
+AR Path="/5E3533B8" Ref="#PWR?"  Part="1" 
+AR Path="/5E3019D8/5E3533B8" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 1050 7550 50  0001 C CNN
+F 1 "-12V" V 1065 7578 50  0000 L CNN
+F 2 "" H 1050 7450 50  0001 C CNN
+F 3 "" H 1050 7450 50  0001 C CNN
+	1    1050 7450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 7050 1250 7050
+Wire Wire Line
+	1050 7450 1250 7450
+Wire Wire Line
+	2150 7050 2350 7050
+Wire Wire Line
+	2150 7450 2350 7450
+$EndSCHEMATC
