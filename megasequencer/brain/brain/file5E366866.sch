@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -195,4 +195,6 @@ Text HLabel 4450 2250 2    50   Output ~ 0
 INT_CLOCK
 Text HLabel 4450 2350 2    50   Input ~ 0
 SEQ_ZERO
+Text HLabel 4500 3350 2    50   Input ~ 0
+PULSE_LENGTH_5V
 $EndSCHEMATC

@@ -9,6 +9,7 @@
   * (JACK) `Ext Clock In` takes the clock signal to an INTERRUPT (`NC` <= `Int Clock Out`)
   * (JACK) `Int Clock Out` gives the internally generated clock signal
   * (JACK+KNOBS) `Clock Rate In` is an analog signal where 0-5V means 0.01s to 10s or something
+  * (JACK+KNOBS) `Pulse Length` is an analog signal controlling the pulse length
 * Step Mode
   * (SPDT) `Direction Select` Selects `DIRECTION` between (_Top_ = `HIGH` = _Forwards_, _Bottom_ = `LOW` = _Backwards_)
   * (JACK) `Ext Direction In` same as `Direction Select` (`NC` => Use `Direction Select`)
@@ -74,12 +75,17 @@ CV generating module.
 
 Also consider that this will work in _Non Linear_ mode as well.
 
-
 = Reset/Zero =
 
 `Reset` means goto step 0.
 `Zero` means goto no step, but next step is 0 (or 15, if `Direction` is `Backwards`).
 
+= Pulse Lengths =
+
+* Pulse length for `OUT PULSE` are controlled by the `Pulse Length` jack/knobs.
+* Pulse length for `OUT E` and `OUT F` are controlled by the switches `Pulse`
+  1. Full Cycle (No gaps)
+  2. Pulse (Shortened pulses)
 
 = Pinout =
 
@@ -90,4 +96,4 @@ Sequencer Zero
 
 = Shift registers =
 
-https://arduino.stackexchange.com/questions/117/is-there-a-way-to-have-more-than-14-output-pins-on-arduino
+* https://www.arduino.cc/en/tutorial/ShiftOut

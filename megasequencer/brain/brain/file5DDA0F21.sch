@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -537,4 +537,102 @@ Text HLabel 2150 5450 2    50   Output ~ 0
 SEQ_ZERO
 Text HLabel 4050 1950 3    50   Output ~ 0
 EXT_CLOCK
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5DDC3FD6
+P 5200 2750
+AR Path="/5DDC3FD6" Ref="J?"  Part="1" 
+AR Path="/5DDA0F22/5DDC3FD6" Ref="J10"  Part="1" 
+F 0 "J10" H 5021 2683 50  0000 R CNN
+F 1 "STEP_OUT" H 5021 2774 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 5200 2750 50  0001 C CNN
+F 3 "~" H 5200 2750 50  0001 C CNN
+	1    5200 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDC3FDC
+P 4950 2850
+AR Path="/5DDC3FDC" Ref="#PWR?"  Part="1" 
+AR Path="/5DDA0F22/5DDC3FDC" Ref="#PWR055"  Part="1" 
+F 0 "#PWR055" H 4950 2600 50  0001 C CNN
+F 1 "GND" V 4955 2722 50  0000 R CNN
+F 2 "" H 4950 2850 50  0001 C CNN
+F 3 "" H 4950 2850 50  0001 C CNN
+	1    4950 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 2850 5000 2850
+$Comp
+L Device:R R?
+U 1 1 5DDC3FE3
+P 4800 2750
+AR Path="/5DDC3FE3" Ref="R?"  Part="1" 
+AR Path="/5DDA0F22/5DDC3FE3" Ref="R40"  Part="1" 
+F 0 "R40" H 4870 2796 50  0000 L CNN
+F 1 "1K" H 4870 2705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4730 2750 50  0001 C CNN
+F 3 "~" H 4800 2750 50  0001 C CNN
+	1    4800 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5000 2750 4950 2750
+$Comp
+L Device:D D?
+U 1 1 5DDC3FEA
+P 4450 2750
+AR Path="/5DDC3FEA" Ref="D?"  Part="1" 
+AR Path="/5DDA0F22/5DDC3FEA" Ref="D14"  Part="1" 
+F 0 "D14" H 4450 2966 50  0000 C CNN
+F 1 "D" H 4450 2875 50  0000 C CNN
+F 2 "" H 4450 2750 50  0001 C CNN
+F 3 "~" H 4450 2750 50  0001 C CNN
+	1    4450 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4600 2750 4650 2750
+NoConn ~ 5000 2650
+$Comp
+L Device:LED D?
+U 1 1 5DDC3FF2
+P 4200 3000
+AR Path="/5DDC3FF2" Ref="D?"  Part="1" 
+AR Path="/5DDA0F22/5DDC3FF2" Ref="D13"  Part="1" 
+F 0 "D13" V 4145 3079 50  0000 L CNN
+F 1 "LED_STEP_PULSE" V 4236 3079 50  0000 L CNN
+F 2 "" H 4200 3000 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DDC3FF8
+P 4250 3200
+AR Path="/5DDC3FF8" Ref="#PWR?"  Part="1" 
+AR Path="/5DDA0F22/5DDC3FF8" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 4250 2950 50  0001 C CNN
+F 1 "GND" H 4255 3027 50  0000 C CNN
+F 2 "" H 4250 3200 50  0001 C CNN
+F 3 "" H 4250 3200 50  0001 C CNN
+	1    4250 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3150 4200 3200
+Wire Wire Line
+	4200 3200 4250 3200
+Wire Wire Line
+	4200 2750 4200 2850
+Connection ~ 4200 2750
+Wire Wire Line
+	4200 2750 4300 2750
+Text HLabel 3900 2750 0    50   Input ~ 0
+STEP_PULSE
+Wire Wire Line
+	3900 2750 4200 2750
 $EndSCHEMATC
