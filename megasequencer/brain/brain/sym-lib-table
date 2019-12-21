@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name brain-rescue)(type Legacy)(uri ${KIPRJMOD}/brain-rescue.lib)(options "")(descr ""))
+)
