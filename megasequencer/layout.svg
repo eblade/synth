@@ -26,15 +26,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="556.15195"
-     inkscape:cy="289.72313"
+     inkscape:cx="440.26245"
+     inkscape:cy="408.33291"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1506"
-     inkscape:window-height="1917"
-     inkscape:window-x="2061"
-     inkscape:window-y="50"
+     inkscape:window-width="3243"
+     inkscape:window-height="951"
+     inkscape:window-x="260"
+     inkscape:window-y="411"
      inkscape:window-maximized="0"
      showguides="false"
      inkscape:snap-text-baseline="false">
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,9 +67,9 @@
        id="rect5594"
        style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.45058051;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922" />
     <rect
-       style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.06107032;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922"
+       style="fill:#b3b3b3;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.89416468;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922"
        id="rect5356"
-       width="36.512539"
+       width="25.929176"
        height="1.3229166"
        x="196.98749"
        y="-262.20197"
@@ -1421,42 +1421,6 @@
            width="131.42857"
            id="rect5202" /></flowRegion><flowPara
          id="flowPara5206">16</flowPara></flowRoot>    <circle
-       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.56500006;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922"
-       id="circle5226"
-       cx="215.44867"
-       cy="208.59117"
-       r="4.1577382" />
-    <circle
-       r="4.1577382"
-       cy="208.59117"
-       cx="226.91452"
-       id="circle5228"
-       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.56500006;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922" />
-    <circle
-       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.56500006;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922"
-       id="circle5230"
-       cx="238.38043"
-       cy="208.59117"
-       r="4.1577382" />
-    <circle
-       r="4.1577382"
-       cy="208.59117"
-       cx="249.84616"
-       id="circle5232"
-       style="fill:#808080;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.56500006;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00458288px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28146482"
-       x="135.84546"
-       y="338.34885"
-       id="text5244"
-       transform="scale(1.5485303,0.64577361)"><tspan
-         sodipodi:role="line"
-         id="tspan5242"
-         x="135.84546"
-         y="338.34885"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.00458288px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.28146482">+OFFSET</tspan></text>
-    <circle
        r="2.5513394"
        cy="231.92647"
        cx="203.5784"
@@ -1485,8 +1449,8 @@
     <circle
        style="fill:#d45500;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle5322"
-       cx="261.60489"
-       cy="234.16841"
+       cx="283.54013"
+       cy="166.90007"
        r="2.5513394" />
     <circle
        r="2.5513394"
@@ -1546,8 +1510,8 @@
        r="2.5513394"
        style="fill:#00ff00;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.57397735;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.49803922"
        id="circle5354"
-       cx="255.88445"
-       cy="230.74095" />
+       cx="278.75201"
+       cy="162.70523" />
     <circle
        style="fill:#800080;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle5358"
@@ -1886,7 +1850,7 @@
        xml:space="preserve"
        id="flowRoot5570"
        style="font-style:normal;font-weight:normal;font-size:21.33333397px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       transform="matrix(0.26458333,0,0,0.26458333,261.0934,174.89455)"><flowRegion
+       transform="matrix(0.26458333,0,0,0.26458333,275.64548,99.866276)"><flowRegion
          id="flowRegion5566"
          style="font-size:21.33333397px"><rect
            id="rect5564"

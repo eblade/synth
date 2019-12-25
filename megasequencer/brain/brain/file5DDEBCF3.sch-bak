@@ -29,8 +29,8 @@ $Comp
 L 74xx:74HC595 U5
 U 1 1 5DDEC62E
 P 2300 3000
-F 0 "U5" H 2300 3778 50  0000 C CNN
-F 1 "74HC595" H 2300 3687 50  0000 C CNN
+F 0 "U5" H 1950 3700 50  0000 C CNN
+F 1 "74HC595" H 1950 3600 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 2300 3000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2300 3000 50  0001 C CNN
 	1    2300 3000
@@ -40,8 +40,8 @@ $Comp
 L 74xx:74HC595 U6
 U 1 1 5DDEC733
 P 2300 5050
-F 0 "U6" H 2300 5828 50  0000 C CNN
-F 1 "74HC595" H 2300 5737 50  0000 C CNN
+F 0 "U6" H 2000 5750 50  0000 C CNN
+F 1 "74HC595" H 2000 5650 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm" H 2300 5050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 2300 5050 50  0001 C CNN
 	1    2300 5050
@@ -227,4 +227,68 @@ Wire Wire Line
 NoConn ~ 2700 5550
 Text Notes 7050 7100 0    50   ~ 0
 https://www.arduino.cc/en/Tutorial/ShiftOut
+Text HLabel 3150 2600 2    50   Output ~ 0
+OUT1
+Text HLabel 3150 2700 2    50   Output ~ 0
+OUT2
+Text HLabel 3150 2800 2    50   Output ~ 0
+OUT3
+Text HLabel 3150 2900 2    50   Output ~ 0
+OUT4
+Text HLabel 3150 3000 2    50   Output ~ 0
+OUT5
+Text HLabel 3150 3100 2    50   Output ~ 0
+OUT6
+Text HLabel 3150 3200 2    50   Output ~ 0
+OUT7
+Text HLabel 3150 3300 2    50   Output ~ 0
+OUT8
+Text HLabel 3150 4650 2    50   Output ~ 0
+OUT9
+Text HLabel 3150 4750 2    50   Output ~ 0
+OUT10
+Text HLabel 3150 4850 2    50   Output ~ 0
+OUT11
+Text HLabel 3150 4950 2    50   Output ~ 0
+OUT12
+Text HLabel 3150 5050 2    50   Output ~ 0
+OUT13
+Text HLabel 3150 5150 2    50   Output ~ 0
+OUT14
+Text HLabel 3150 5250 2    50   Output ~ 0
+OUT15
+Text HLabel 3150 5350 2    50   Output ~ 0
+OUT16
+Wire Wire Line
+	2700 2600 3150 2600
+Wire Wire Line
+	2700 2700 3150 2700
+Wire Wire Line
+	2700 2800 3150 2800
+Wire Wire Line
+	2700 2900 3150 2900
+Wire Wire Line
+	2700 3000 3150 3000
+Wire Wire Line
+	2700 3100 3150 3100
+Wire Wire Line
+	2700 3200 3150 3200
+Wire Wire Line
+	2700 3300 3150 3300
+Wire Wire Line
+	2700 4650 3150 4650
+Wire Wire Line
+	2700 4750 3150 4750
+Wire Wire Line
+	2700 4850 3150 4850
+Wire Wire Line
+	2700 4950 3150 4950
+Wire Wire Line
+	2700 5050 3150 5050
+Wire Wire Line
+	2700 5150 3150 5150
+Wire Wire Line
+	2700 5250 3150 5250
+Wire Wire Line
+	2700 5350 3150 5350
 $EndSCHEMATC
