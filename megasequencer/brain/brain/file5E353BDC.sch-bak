@@ -650,4 +650,6 @@ Wire Wire Line
 	2150 1000 2800 1000
 Text HLabel 2800 1000 2    50   Output ~ 0
 INT_POS_5V
+Text Notes 3875 2450 0    50   ~ 0
+Resistor values for the switches:\n01: 91k\n02: 51k\n03: 36k\n04: 27k\n05: 20k\n06: 15k\n07: 12k\n08: 9k1\n09: 7k5\n10: 5k6\n11: 4k3\n12: 3k1\n13: 2k2\n14: 1k5\n15: 620
 $EndSCHEMATC

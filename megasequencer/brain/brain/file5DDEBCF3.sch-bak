@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -227,68 +227,94 @@ Wire Wire Line
 NoConn ~ 2700 5550
 Text Notes 7050 7100 0    50   ~ 0
 https://www.arduino.cc/en/Tutorial/ShiftOut
-Text HLabel 3150 2600 2    50   Output ~ 0
-OUT1
-Text HLabel 3150 2700 2    50   Output ~ 0
-OUT2
-Text HLabel 3150 2800 2    50   Output ~ 0
-OUT3
-Text HLabel 3150 2900 2    50   Output ~ 0
-OUT4
-Text HLabel 3150 3000 2    50   Output ~ 0
-OUT5
-Text HLabel 3150 3100 2    50   Output ~ 0
-OUT6
-Text HLabel 3150 3200 2    50   Output ~ 0
-OUT7
-Text HLabel 3150 3300 2    50   Output ~ 0
-OUT8
-Text HLabel 3150 4650 2    50   Output ~ 0
-OUT9
-Text HLabel 3150 4750 2    50   Output ~ 0
-OUT10
-Text HLabel 3150 4850 2    50   Output ~ 0
-OUT11
-Text HLabel 3150 4950 2    50   Output ~ 0
-OUT12
-Text HLabel 3150 5050 2    50   Output ~ 0
-OUT13
-Text HLabel 3150 5150 2    50   Output ~ 0
-OUT14
-Text HLabel 3150 5250 2    50   Output ~ 0
-OUT15
-Text HLabel 3150 5350 2    50   Output ~ 0
-OUT16
+$Comp
+L Connector:Conn_01x17_Male J?
+U 1 1 5E0643C1
+P 5150 3300
+AR Path="/5E0643C1" Ref="J?"  Part="1" 
+AR Path="/5DDEBCF4/5E0643C1" Ref="J4"  Part="1" 
+F 0 "J4" H 5122 3324 50  0000 R CNN
+F 1 "TO_OUTPUTS" H 5122 3233 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x17_P2.54mm_Vertical" H 5150 3300 50  0001 C CNN
+F 3 "~" H 5150 3300 50  0001 C CNN
+	1    5150 3300
+	-1   0    0    -1  
+$EndComp
 Wire Wire Line
-	2700 2600 3150 2600
+	2700 2600 4950 2600
 Wire Wire Line
-	2700 2700 3150 2700
+	2700 2700 4950 2700
 Wire Wire Line
-	2700 2800 3150 2800
+	2700 2800 4950 2800
 Wire Wire Line
-	2700 2900 3150 2900
+	2700 2900 4950 2900
 Wire Wire Line
-	2700 3000 3150 3000
+	2700 3000 4950 3000
 Wire Wire Line
-	2700 3100 3150 3100
+	2700 3100 4950 3100
 Wire Wire Line
-	2700 3200 3150 3200
+	2700 3200 4950 3200
 Wire Wire Line
-	2700 3300 3150 3300
+	2700 3300 4950 3300
 Wire Wire Line
-	2700 4650 3150 4650
+	4000 4650 4000 3400
 Wire Wire Line
-	2700 4750 3150 4750
+	4000 3400 4950 3400
 Wire Wire Line
-	2700 4850 3150 4850
+	2700 4650 4000 4650
 Wire Wire Line
-	2700 4950 3150 4950
+	4100 4750 4100 3500
 Wire Wire Line
-	2700 5050 3150 5050
+	4100 3500 4950 3500
 Wire Wire Line
-	2700 5150 3150 5150
+	2700 4750 4100 4750
 Wire Wire Line
-	2700 5250 3150 5250
+	4200 4850 4200 3600
 Wire Wire Line
-	2700 5350 3150 5350
+	4200 3600 4950 3600
+Wire Wire Line
+	2700 4850 4200 4850
+Wire Wire Line
+	2700 4950 4300 4950
+Wire Wire Line
+	4300 3700 4950 3700
+Wire Wire Line
+	4300 4950 4300 3700
+Wire Wire Line
+	4400 5050 4400 3800
+Wire Wire Line
+	4400 3800 4950 3800
+Wire Wire Line
+	2700 5050 4400 5050
+Wire Wire Line
+	4500 5150 4500 3900
+Wire Wire Line
+	4500 3900 4950 3900
+Wire Wire Line
+	2700 5150 4500 5150
+Wire Wire Line
+	4600 5250 4600 4000
+Wire Wire Line
+	4600 4000 4950 4000
+Wire Wire Line
+	2700 5250 4600 5250
+Wire Wire Line
+	4700 5350 4700 4100
+Wire Wire Line
+	4700 4100 4950 4100
+Wire Wire Line
+	2700 5350 4700 5350
+$Comp
+L power:GND #PWR016
+U 1 1 5E07C333
+P 4750 2500
+F 0 "#PWR016" H 4750 2250 50  0001 C CNN
+F 1 "GND" V 4755 2372 50  0000 R CNN
+F 2 "" H 4750 2500 50  0001 C CNN
+F 3 "" H 4750 2500 50  0001 C CNN
+	1    4750 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2500 4950 2500
 $EndSCHEMATC

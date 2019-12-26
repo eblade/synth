@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -205,4 +205,71 @@ Text HLabel 4500 4450 2    50   Output ~ 0
 STEPS_CLOCK
 Text HLabel 4500 4250 2    50   Output ~ 0
 STEPS_LATCH
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J3
+U 1 1 5E08B37C
+P 7725 2275
+F 0 "J3" H 7775 2692 50  0000 C CNN
+F 1 "ICSP" H 7775 2601 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7725 2275 50  0001 C CNN
+F 3 "~" H 7725 2275 50  0001 C CNN
+	1    7725 2275
+	1    0    0    -1  
+$EndComp
+Text Label 7525 2475 2    50   ~ 0
+D12-MISO
+Text Label 7525 2375 2    50   ~ 0
+D13-SCK
+Text Label 7525 2275 2    50   ~ 0
+RST
+Text Label 7525 2075 2    50   ~ 0
+D11-MOSI
+$Comp
+L power:+5V #PWR?
+U 1 1 5E08BEE4
+P 8250 2075
+AR Path="/5E08BEE4" Ref="#PWR?"  Part="1" 
+AR Path="/5E366867/5E08BEE4" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 8250 1925 50  0001 C CNN
+F 1 "+5V" H 8400 2125 50  0000 C CNN
+F 2 "" H 8250 2075 50  0001 C CNN
+F 3 "" H 8250 2075 50  0001 C CNN
+	1    8250 2075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8025 2075 8250 2075
+$Comp
+L power:GND #PWR?
+U 1 1 5E08CAE8
+P 8175 2550
+AR Path="/5E08CAE8" Ref="#PWR?"  Part="1" 
+AR Path="/5E366867/5E08CAE8" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 8175 2300 50  0001 C CNN
+F 1 "GND" H 8180 2377 50  0000 C CNN
+F 2 "" H 8175 2550 50  0001 C CNN
+F 3 "" H 8175 2550 50  0001 C CNN
+	1    8175 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 2175 8175 2175
+Wire Wire Line
+	8175 2175 8175 2275
+Wire Wire Line
+	8025 2275 8175 2275
+Connection ~ 8175 2275
+Wire Wire Line
+	8175 2275 8175 2375
+Wire Wire Line
+	8025 2375 8175 2375
+Connection ~ 8175 2375
+Wire Wire Line
+	8175 2375 8175 2475
+Connection ~ 8175 2475
+Wire Wire Line
+	8175 2475 8175 2550
+Wire Wire Line
+	8025 2475 8175 2475
+NoConn ~ 7525 2175
 $EndSCHEMATC

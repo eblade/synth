@@ -361,7 +361,7 @@ P 1700 2400
 AR Path="/5E04C279" Ref="SW4"  Part="1" 
 AR Path="/5DDA0F22/5E04C279" Ref="SW?"  Part="1" 
 F 0 "SW4" H 1700 2685 50  0000 C CNN
-F 1 "SW_SPDT" H 1700 2594 50  0000 C CNN
+F 1 "SEQ_DIR" H 1700 2594 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1700 2400 50  0001 C CNN
 F 3 "" H 1700 2400 50  0001 C CNN
 	1    1700 2400
@@ -627,7 +627,7 @@ F 1 "RATE_ATT" H 4381 1695 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4450 1650 50  0001 C CNN
 F 3 "~" H 4450 1650 50  0001 C CNN
 	1    4450 1650
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4900 1400 4450 1400
@@ -693,7 +693,7 @@ F 1 "RATE_OFFSET" H 3931 995 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4000 950 50  0001 C CNN
 F 3 "~" H 4000 950 50  0001 C CNN
 	1    4000 950 
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR015
@@ -792,7 +792,7 @@ F 1 "EXTPOS_ATT" H 4381 2995 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4450 2950 50  0001 C CNN
 F 3 "~" H 4450 2950 50  0001 C CNN
 	1    4450 2950
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR025
@@ -870,7 +870,7 @@ F 1 "EXTPOS_OFFSET" H 3931 2345 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4000 2300 50  0001 C CNN
 F 3 "~" H 4000 2300 50  0001 C CNN
 	1    4000 2300
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3750 2500 3750 2300
@@ -959,7 +959,7 @@ F 1 "PULSELEN_ATT" H 4381 4395 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4450 4350 50  0001 C CNN
 F 3 "~" H 4450 4350 50  0001 C CNN
 	1    4450 4350
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4900 4100 4450 4100
@@ -1025,7 +1025,7 @@ F 1 "PULSELEN_OFFSET" H 3931 3695 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 4000 3650 50  0001 C CNN
 F 3 "~" H 4000 3650 50  0001 C CNN
 	1    4000 3650
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR017
@@ -1430,21 +1430,6 @@ F 3 "" H 9050 800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8850 800  9050 800 
-$Comp
-L power:+5V #PWR038
-U 1 1 5E2D31EE
-P 10650 850
-AR Path="/5E2D31EE" Ref="#PWR038"  Part="1" 
-AR Path="/5DDA0F22/5E2D31EE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR038" H 10650 700 50  0001 C CNN
-F 1 "+5V" V 10650 1050 50  0000 C CNN
-F 2 "" H 10650 850 50  0001 C CNN
-F 3 "" H 10650 850 50  0001 C CNN
-	1    10650 850 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9600 900  9800 900 
 Text Label 8850 1100 0    50   ~ 0
 OFFSET_B
 Text Label 8850 1500 0    50   ~ 0
@@ -1461,54 +1446,39 @@ Text Label 8850 1600 0    50   ~ 0
 OUTPUT_D
 Text Label 8850 1800 0    50   ~ 0
 OUTPUT_F
-Text Label 10650 2150 0    50   ~ 0
+Text Label 8850 3450 0    50   ~ 0
 EXT_RATE_A
-Text Label 10650 2250 0    50   ~ 0
+Text Label 8850 3650 0    50   ~ 0
 EXT_POS_A
-Text Label 10650 2350 0    50   ~ 0
+Text Label 8850 3550 0    50   ~ 0
 PULSELEN_A
-Text Label 8850 1900 0    50   ~ 0
-INT_CLOCK_D
 Text Label 8850 2000 0    50   ~ 0
+INT_CLOCK_D
+Text Label 8850 1900 0    50   ~ 0
 EXT_CLOCK_D
-Text Label 9600 1100 0    50   ~ 0
+Text Label 8850 3150 0    50   ~ 0
 SEQ_DIR_D
-Text Label 9600 1300 0    50   ~ 0
+Text Label 8850 3350 0    50   ~ 0
 SEQ_RESET_D
-Text Label 9600 1200 0    50   ~ 0
+Text Label 8850 3250 0    50   ~ 0
 SEQ_ZERO_D
 Text Label 8850 2100 0    50   ~ 0
 STEP_PULSE_D
 $Comp
 L power:+5V #PWR040
 U 1 1 5E2E5A57
-P 9850 3000
+P 9100 3050
 AR Path="/5E2E5A57" Ref="#PWR040"  Part="1" 
 AR Path="/5DDA0F22/5E2E5A57" Ref="#PWR?"  Part="1" 
-F 0 "#PWR040" H 9850 2850 50  0001 C CNN
-F 1 "+5V" V 9850 3200 50  0000 C CNN
-F 2 "" H 9850 3000 50  0001 C CNN
-F 3 "" H 9850 3000 50  0001 C CNN
-	1    9850 3000
+F 0 "#PWR040" H 9100 2900 50  0001 C CNN
+F 1 "+5V" V 9100 3250 50  0000 C CNN
+F 2 "" H 9100 3050 50  0001 C CNN
+F 3 "" H 9100 3050 50  0001 C CNN
+	1    9100 3050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9600 3000 9850 3000
-$Comp
-L power:GND #PWR041
-U 1 1 5E2EB7CA
-P 9850 3100
-AR Path="/5E2EB7CA" Ref="#PWR041"  Part="1" 
-AR Path="/5E36D63E/5E2EB7CA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR041" H 9850 2850 50  0001 C CNN
-F 1 "GND" V 9855 2972 50  0000 R CNN
-F 2 "" H 9850 3100 50  0001 C CNN
-F 3 "" H 9850 3100 50  0001 C CNN
-	1    9850 3100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9600 3100 9850 3100
+	8850 3050 9100 3050
 Text Notes 7050 6850 0    50   ~ 0
 This is the top layer of the Mega Sequencer. It contains all of the buttons, connectors and pots that are\nnot in the in the step matrix or part of the keyboard. It connects to the lower processing layer via a \n24 pin connector pointing downwards.
 $Comp
@@ -1579,10 +1549,10 @@ F 3 "~" H 7100 900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J20
 U 1 1 5E42E278
 P 8650 1600
-F 0 "J?" H 8568 575 50  0000 C CNN
+F 0 "J20" H 8568 575 50  0000 C CNN
 F 1 "TOP" H 8568 666 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 8650 1600 50  0001 C CNN
 F 3 "~" H 8650 1600 50  0001 C CNN
@@ -1590,14 +1560,67 @@ F 3 "~" H 8650 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J?
+L Connector_Generic:Conn_01x16 J21
 U 1 1 5E4304E0
 P 8650 3750
-F 0 "J?" H 8568 2725 50  0000 C CNN
+F 0 "J21" H 8568 2725 50  0000 C CNN
 F 1 "BOTTOM" H 8568 2816 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 8650 3750 50  0001 C CNN
 F 3 "~" H 8650 3750 50  0001 C CNN
 	1    8650 3750
 	-1   0    0    1   
 $EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E0F7E36
+P 9100 2950
+AR Path="/5E0F7E36" Ref="#PWR0101"  Part="1" 
+AR Path="/5E36D63E/5E0F7E36" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0101" H 9100 2700 50  0001 C CNN
+F 1 "GND" V 9105 2822 50  0000 R CNN
+F 2 "" H 9100 2950 50  0001 C CNN
+F 3 "" H 9100 2950 50  0001 C CNN
+	1    9100 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 2950 9100 2950
+$Comp
+L power:GND #PWR?
+U 1 1 5E197063
+P 9100 4450
+AR Path="/5E197063" Ref="#PWR?"  Part="1" 
+AR Path="/5E36D63E/5E197063" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 4200 50  0001 C CNN
+F 1 "GND" V 9105 4322 50  0000 R CNN
+F 2 "" H 9100 4450 50  0001 C CNN
+F 3 "" H 9100 4450 50  0001 C CNN
+	1    9100 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E197874
+P 9100 2300
+AR Path="/5E197874" Ref="#PWR?"  Part="1" 
+AR Path="/5E36D63E/5E197874" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9100 2050 50  0001 C CNN
+F 1 "GND" V 9105 2172 50  0000 R CNN
+F 2 "" H 9100 2300 50  0001 C CNN
+F 3 "" H 9100 2300 50  0001 C CNN
+	1    9100 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8850 2300 9100 2300
+Wire Wire Line
+	8850 4450 9100 4450
+NoConn ~ 8850 2200
+NoConn ~ 8850 3750
+NoConn ~ 8850 3850
+NoConn ~ 8850 3950
+NoConn ~ 8850 4050
+NoConn ~ 8850 4150
+NoConn ~ 8850 4250
+NoConn ~ 8850 4350
 $EndSCHEMATC
