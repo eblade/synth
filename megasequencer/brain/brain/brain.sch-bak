@@ -174,9 +174,204 @@ EXT_CLOCK_D
 Text Label 9500 3550 0    50   ~ 0
 STEP_PULSE_D
 $Sheet
-S 1500 2375 1000 3775
+S 8100 700  850  925 
 U 5E0D4D6E
 F0 "Output Offset" 50
 F1 "output_offset.sch" 50
+F2 "AO_IN" I R 8950 825 50 
+F3 "BO_IN" I R 8950 1025 50 
+F4 "CO_IN" I R 8950 1225 50 
+F5 "DO_IN" I R 8950 1425 50 
+F6 "A_OUT" O R 8950 925 50 
+F7 "B_OUT" O R 8950 1125 50 
+F8 "C_OUT" O R 8950 1325 50 
+F9 "D_OUT" O R 8950 1525 50 
+F10 "E_OUT" O L 8100 825 50 
+F11 "F_OUT" O L 8100 925 50 
 $EndSheet
+Wire Wire Line
+	8950 825  8950 925 
+Wire Wire Line
+	8950 825  9525 825 
+Wire Wire Line
+	8950 1025 9525 1025
+Wire Wire Line
+	8950 925  9525 925 
+Wire Wire Line
+	8950 1125 9525 1125
+Wire Wire Line
+	8950 1225 9525 1225
+Wire Wire Line
+	8950 1325 9525 1325
+Wire Wire Line
+	8950 1425 9525 1425
+Wire Wire Line
+	8950 1525 9525 1525
+Text Label 9525 825  2    50   ~ 0
+OFFSET_A
+Text Label 9525 1025 2    50   ~ 0
+OFFSET_B
+Text Label 9525 1225 2    50   ~ 0
+OFFSET_C
+Text Label 9525 1425 2    50   ~ 0
+OFFSET_D
+Text Label 9525 925  2    50   ~ 0
+OUTPUT_A
+Text Label 9525 1125 2    50   ~ 0
+OUTPUT_B
+Text Label 9525 1325 2    50   ~ 0
+OUTPUT_C
+Text Label 9525 1525 2    50   ~ 0
+OUTPUT_D
+$Comp
+L Connector_Generic:Conn_01x16 J?
+U 1 1 5E1623FC
+P 3250 2025
+F 0 "J?" H 3168 1000 50  0000 C CNN
+F 1 "TOP" H 3168 1091 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3250 2025 50  0001 C CNN
+F 3 "~" H 3250 2025 50  0001 C CNN
+	1    3250 2025
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x16 J?
+U 1 1 5E162F36
+P 3250 4100
+F 0 "J?" H 3168 3075 50  0000 C CNN
+F 1 "BOTTOM" H 3168 3166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3250 4100 50  0001 C CNN
+F 3 "~" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E164133
+P 3750 1225
+AR Path="/5E164133" Ref="#PWR?"  Part="1" 
+AR Path="/5E353BDD/5E164133" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 975 50  0001 C CNN
+F 1 "GND" V 3755 1052 50  0000 C CNN
+F 2 "" H 3750 1225 50  0001 C CNN
+F 3 "" H 3750 1225 50  0001 C CNN
+	1    3750 1225
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3450 1225 3750 1225
+$Comp
+L power:GND #PWR?
+U 1 1 5E165C44
+P 3750 2725
+AR Path="/5E165C44" Ref="#PWR?"  Part="1" 
+AR Path="/5E353BDD/5E165C44" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 2475 50  0001 C CNN
+F 1 "GND" V 3755 2552 50  0000 C CNN
+F 2 "" H 3750 2725 50  0001 C CNN
+F 3 "" H 3750 2725 50  0001 C CNN
+	1    3750 2725
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3450 2725 3750 2725
+$Comp
+L power:GND #PWR?
+U 1 1 5E167AD3
+P 3750 3300
+AR Path="/5E167AD3" Ref="#PWR?"  Part="1" 
+AR Path="/5E353BDD/5E167AD3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 3050 50  0001 C CNN
+F 1 "GND" V 3755 3127 50  0000 C CNN
+F 2 "" H 3750 3300 50  0001 C CNN
+F 3 "" H 3750 3300 50  0001 C CNN
+	1    3750 3300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3450 3300 3750 3300
+$Comp
+L power:GND #PWR?
+U 1 1 5E169C3D
+P 3750 4800
+AR Path="/5E169C3D" Ref="#PWR?"  Part="1" 
+AR Path="/5E353BDD/5E169C3D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3750 4550 50  0001 C CNN
+F 1 "GND" V 3755 4627 50  0000 C CNN
+F 2 "" H 3750 4800 50  0001 C CNN
+F 3 "" H 3750 4800 50  0001 C CNN
+	1    3750 4800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3450 4800 3750 4800
+$Comp
+L power:+5V #PWR?
+U 1 1 5E16B5A5
+P 3750 3400
+F 0 "#PWR?" H 3750 3250 50  0001 C CNN
+F 1 "+5V" V 3765 3528 50  0000 L CNN
+F 2 "" H 3750 3400 50  0001 C CNN
+F 3 "" H 3750 3400 50  0001 C CNN
+	1    3750 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 3400 3750 3400
+Text Label 3450 1325 0    50   ~ 0
+OFFSET_A
+Text Label 3450 1425 0    50   ~ 0
+OUTPUT_A
+Text Label 3450 1525 0    50   ~ 0
+OFFSET_B
+Text Label 3450 1625 0    50   ~ 0
+OUTPUT_B
+Text Label 3450 1725 0    50   ~ 0
+OFFSET_C
+Text Label 3450 1825 0    50   ~ 0
+OUTPUT_C
+Text Label 3450 1925 0    50   ~ 0
+OFFSET_D
+Text Label 3450 2025 0    50   ~ 0
+OUTPUT_D
+Text Label 3450 2125 0    50   ~ 0
+OUTPUT_E
+Text Label 3450 2225 0    50   ~ 0
+OUTPUT_F
+Text Label 3450 2325 0    50   ~ 0
+EXT_CLOCK_D
+Text Label 3450 2425 0    50   ~ 0
+INT_CLOCK_D
+Text Label 3450 2525 0    50   ~ 0
+STEP_PULSE_D
+Text Label 3450 3500 0    50   ~ 0
+SEQ_DIR_D
+Text Label 3450 3600 0    50   ~ 0
+SEQ_ZERO_D
+Text Label 3450 3700 0    50   ~ 0
+SEQ_RESET_D
+Text Label 3450 3800 0    50   ~ 0
+EXT_RATE_A
+Text Label 3450 3900 0    50   ~ 0
+PULSELEN_A
+Text Label 3450 4000 0    50   ~ 0
+EXT_POS_A
+NoConn ~ 3450 2625
+NoConn ~ 3450 4100
+NoConn ~ 3450 4200
+NoConn ~ 3450 4300
+NoConn ~ 3450 4400
+NoConn ~ 3450 4500
+NoConn ~ 3450 4600
+NoConn ~ 3450 4700
+Wire Wire Line
+	8100 825  8100 925 
+Wire Wire Line
+	8100 825  7650 825 
+Wire Wire Line
+	8100 925  7650 925 
+Text Label 7650 825  0    50   ~ 0
+OUTPUT_E
+Text Label 7650 925  0    50   ~ 0
+OUTPUT_F
 $EndSCHEMATC

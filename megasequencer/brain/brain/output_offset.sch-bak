@@ -952,20 +952,57 @@ Connection ~ 9750 2950
 Wire Wire Line
 	9900 3600 9750 3600
 Connection ~ 9750 3600
-Text HLabel 4000 950  2    50   Input ~ 0
-A_IN
 Text HLabel 4000 1350 2    50   Input ~ 0
 AO_IN
-Text HLabel 4000 2150 2    50   Input ~ 0
-B_IN
 Text HLabel 4000 2550 2    50   Input ~ 0
 BO_IN
-Text HLabel 4000 3400 2    50   Input ~ 0
-C_IN
 Text HLabel 4000 3800 2    50   Input ~ 0
 CO_IN
-Text HLabel 4000 4600 2    50   Input ~ 0
-D_IN
 Text HLabel 4000 5000 2    50   Input ~ 0
 DO_IN
+Text HLabel 1075 1550 0    50   Output ~ 0
+A_OUT
+Text HLabel 1075 2750 0    50   Output ~ 0
+B_OUT
+Text HLabel 1075 4000 0    50   Output ~ 0
+C_OUT
+Text HLabel 1075 5200 0    50   Output ~ 0
+D_OUT
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5E147FB7
+P 6525 2850
+F 0 "J?" H 6605 2842 50  0000 L CNN
+F 1 "FROM_OUTPUTS" H 6605 2751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6525 2850 50  0001 C CNN
+F 3 "~" H 6525 2850 50  0001 C CNN
+	1    6525 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 950  6325 950 
+Wire Wire Line
+	4000 2150 6250 2150
+Wire Wire Line
+	6250 2150 6250 2750
+Wire Wire Line
+	6250 2750 6325 2750
+Wire Wire Line
+	4000 3400 5525 3400
+Wire Wire Line
+	5525 3400 5525 2850
+Wire Wire Line
+	5525 2850 6325 2850
+Wire Wire Line
+	6325 950  6325 2650
+Wire Wire Line
+	4000 4600 5600 4600
+Wire Wire Line
+	5600 4600 5600 2950
+Wire Wire Line
+	5600 2950 6325 2950
+Text HLabel 6325 3050 0    50   Output ~ 0
+E_OUT
+Text HLabel 6325 3150 0    50   Output ~ 0
+F_OUT
 $EndSCHEMATC
