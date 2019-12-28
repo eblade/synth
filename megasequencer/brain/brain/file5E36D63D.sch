@@ -224,15 +224,15 @@ Wire Wire Line
 	1700 2850 1750 2850
 $Comp
 L Amplifier_Operational:TL074 U?
-U 3 1 5E36F06C
+U 4 1 5E36F06C
 P 3900 4100
 AR Path="/5E36F06C" Ref="U?"  Part="3" 
-AR Path="/5E36D63E/5E36F06C" Ref="U3"  Part="3" 
+AR Path="/5E36D63E/5E36F06C" Ref="U3"  Part="4" 
 F 0 "U3" H 3950 4250 50  0000 C CNN
 F 1 "TL074" H 3950 4350 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 3850 4200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3950 4300 50  0001 C CNN
-	3    3900 4100
+	4    3900 4100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -293,15 +293,15 @@ Wire Wire Line
 	3450 4100 3600 4100
 $Comp
 L Amplifier_Operational:TL074 U?
-U 4 1 5E36F095
+U 3 1 5E36F095
 P 2700 4200
 AR Path="/5E36F095" Ref="U?"  Part="4" 
-AR Path="/5E36D63E/5E36F095" Ref="U3"  Part="4" 
+AR Path="/5E36D63E/5E36F095" Ref="U3"  Part="3" 
 F 0 "U3" H 2750 4350 50  0000 C CNN
 F 1 "TL074" H 2750 4450 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 2650 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2750 4400 50  0001 C CNN
-	4    2700 4200
+	3    2700 4200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line

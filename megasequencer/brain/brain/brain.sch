@@ -136,8 +136,6 @@ Wire Wire Line
 Wire Wire Line
 	9775 2150 10025 2150
 Wire Wire Line
-	8100 1950 8100 2050
-Wire Wire Line
 	8100 1950 7575 1950
 Wire Wire Line
 	8100 2050 7575 2050
@@ -190,8 +188,6 @@ F10 "E_OUT" O L 8100 825 50
 F11 "F_OUT" O L 8100 925 50 
 $EndSheet
 Wire Wire Line
-	8950 825  8950 925 
-Wire Wire Line
 	8950 825  9525 825 
 Wire Wire Line
 	8950 1025 9525 1025
@@ -229,20 +225,20 @@ U 1 1 5E1623FC
 P 3250 2025
 F 0 "J1" H 3168 1000 50  0000 C CNN
 F 1 "TOP" H 3168 1091 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3250 2025 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 3250 2025 50  0001 C CNN
 F 3 "~" H 3250 2025 50  0001 C CNN
 	1    3250 2025
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x16 J2
+L Connector_Generic:Conn_01x08 J2
 U 1 1 5E162F36
-P 3250 4100
-F 0 "J2" H 3168 3075 50  0000 C CNN
-F 1 "BOTTOM" H 3168 3166 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 3250 4100 50  0001 C CNN
-F 3 "~" H 3250 4100 50  0001 C CNN
-	1    3250 4100
+P 3250 3700
+F 0 "J2" H 3175 3075 50  0000 C CNN
+F 1 "BOTTOM" H 3175 3175 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 3250 3700 50  0001 C CNN
+F 3 "~" H 3250 3700 50  0001 C CNN
+	1    3250 3700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -293,18 +289,18 @@ Wire Wire Line
 $Comp
 L power:GND #PWR05
 U 1 1 5E169C3D
-P 3750 4800
+P 3750 4000
 AR Path="/5E169C3D" Ref="#PWR05"  Part="1" 
 AR Path="/5E353BDD/5E169C3D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR05" H 3750 4550 50  0001 C CNN
-F 1 "GND" V 3755 4627 50  0000 C CNN
-F 2 "" H 3750 4800 50  0001 C CNN
-F 3 "" H 3750 4800 50  0001 C CNN
-	1    3750 4800
+F 0 "#PWR05" H 3750 3750 50  0001 C CNN
+F 1 "GND" V 3755 3827 50  0000 C CNN
+F 2 "" H 3750 4000 50  0001 C CNN
+F 3 "" H 3750 4000 50  0001 C CNN
+	1    3750 4000
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	3450 4800 3750 4800
+	3450 4000 3750 4000
 $Comp
 L power:+5V #PWR04
 U 1 1 5E16B5A5
@@ -350,22 +346,15 @@ Text Label 3450 3600 0    50   ~ 0
 SEQ_ZERO_D
 Text Label 3450 3700 0    50   ~ 0
 SEQ_RESET_D
-Text Label 3450 3800 0    50   ~ 0
+Text Label 3450 4675 0    50   ~ 0
 EXT_RATE_A
-Text Label 3450 3900 0    50   ~ 0
+Text Label 3450 4775 0    50   ~ 0
 PULSELEN_A
-Text Label 3450 4000 0    50   ~ 0
+Text Label 3450 4875 0    50   ~ 0
 EXT_POS_A
 NoConn ~ 3450 2625
-NoConn ~ 3450 4100
-NoConn ~ 3450 4200
-NoConn ~ 3450 4300
-NoConn ~ 3450 4400
-NoConn ~ 3450 4500
-NoConn ~ 3450 4600
-NoConn ~ 3450 4700
-Wire Wire Line
-	8100 825  8100 925 
+NoConn ~ 3450 3800
+NoConn ~ 3450 3900
 Wire Wire Line
 	8100 825  7650 825 
 Wire Wire Line
@@ -374,4 +363,126 @@ Text Label 7650 825  0    50   ~ 0
 OUTPUT_E
 Text Label 7650 925  0    50   ~ 0
 OUTPUT_F
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5E195353
+P 1225 6625
+F 0 "H1" H 1325 6674 50  0000 L CNN
+F 1 "M3" H 1325 6583 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1225 6625 50  0001 C CNN
+F 3 "~" H 1225 6625 50  0001 C CNN
+	1    1225 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5E195690
+P 1575 6625
+F 0 "H2" H 1675 6674 50  0000 L CNN
+F 1 "M3" H 1675 6583 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1575 6625 50  0001 C CNN
+F 3 "~" H 1575 6625 50  0001 C CNN
+	1    1575 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5E195A0D
+P 1900 6625
+F 0 "H3" H 2000 6674 50  0000 L CNN
+F 1 "M3" H 2000 6583 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 1900 6625 50  0001 C CNN
+F 3 "~" H 1900 6625 50  0001 C CNN
+	1    1900 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5E195C5B
+P 2225 6625
+F 0 "H4" H 2325 6674 50  0000 L CNN
+F 1 "M3" H 2325 6583 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 2225 6625 50  0001 C CNN
+F 3 "~" H 2225 6625 50  0001 C CNN
+	1    2225 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR059
+U 1 1 5E195FDF
+P 1225 6725
+AR Path="/5E195FDF" Ref="#PWR059"  Part="1" 
+AR Path="/5E353BDD/5E195FDF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR059" H 1225 6475 50  0001 C CNN
+F 1 "GND" V 1230 6552 50  0000 C CNN
+F 2 "" H 1225 6725 50  0001 C CNN
+F 3 "" H 1225 6725 50  0001 C CNN
+	1    1225 6725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR060
+U 1 1 5E19680B
+P 1575 6725
+AR Path="/5E19680B" Ref="#PWR060"  Part="1" 
+AR Path="/5E353BDD/5E19680B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR060" H 1575 6475 50  0001 C CNN
+F 1 "GND" V 1580 6552 50  0000 C CNN
+F 2 "" H 1575 6725 50  0001 C CNN
+F 3 "" H 1575 6725 50  0001 C CNN
+	1    1575 6725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR061
+U 1 1 5E19694A
+P 1900 6725
+AR Path="/5E19694A" Ref="#PWR061"  Part="1" 
+AR Path="/5E353BDD/5E19694A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR061" H 1900 6475 50  0001 C CNN
+F 1 "GND" V 1905 6552 50  0000 C CNN
+F 2 "" H 1900 6725 50  0001 C CNN
+F 3 "" H 1900 6725 50  0001 C CNN
+	1    1900 6725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR062
+U 1 1 5E196AD0
+P 2225 6725
+AR Path="/5E196AD0" Ref="#PWR062"  Part="1" 
+AR Path="/5E353BDD/5E196AD0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR062" H 2225 6475 50  0001 C CNN
+F 1 "GND" V 2230 6552 50  0000 C CNN
+F 2 "" H 2225 6725 50  0001 C CNN
+F 3 "" H 2225 6725 50  0001 C CNN
+	1    2225 6725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5E340773
+P 3250 4775
+F 0 "J8" H 3168 4350 50  0000 C CNN
+F 1 "RIGHT" H 3168 4441 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3250 4775 50  0001 C CNN
+F 3 "~" H 3250 4775 50  0001 C CNN
+	1    3250 4775
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 5E34FAC4
+P 3750 4575
+AR Path="/5E34FAC4" Ref="#PWR067"  Part="1" 
+AR Path="/5E353BDD/5E34FAC4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR067" H 3750 4325 50  0001 C CNN
+F 1 "GND" V 3755 4402 50  0000 C CNN
+F 2 "" H 3750 4575 50  0001 C CNN
+F 3 "" H 3750 4575 50  0001 C CNN
+	1    3750 4575
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3450 4575 3750 4575
 $EndSCHEMATC
