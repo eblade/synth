@@ -17,3 +17,4 @@
 
 * Good info in [Datasheet for QST608](QST608.pdf) (look at page 26 for drawings)
 * Look into the library [CapacitiveSensor](https://playground.arduino.cc/Main/CapacitiveSensor/)
+* Also [this page](https://bryanduxbury.com/2013/12/05/designing-a-capacitive-touch-wheel-in-openscad-and-eagle/) can be useful
