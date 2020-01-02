@@ -1,4 +1,8 @@
-= Interface =
+# MegaSequencer
+
+16 step 6 output multi-operational sequencer for EuroRack
+
+## Interface
 
 * Outputs
   * (JACK) `OUT A-D` are analog outputs
@@ -21,12 +25,12 @@ Notes:
 1. `OUT A-D` are independent
 2. `OUT E` and `OUT F` are selectable, one per `POSITION`
 
-= Ideas =
+## Ideas
 
 * At least one of the analog outputs should have a possibility to add an external signal, for
   allowing higher hierarchy of sequencing (for chord progressions).
 
-= Modes of Operations =
+## Modes of Operations
 
 Internal/External Clock (decides what triggers a `CLOCK PULSE`):
 1. Internal (nothing connected to `Ext Clock In`)
@@ -44,12 +48,12 @@ Directions (for Step mode):
 1. Forwards
 2. Backwards
 
-= Step Sequencing =
+## Step Sequencing
 
 The normal mode of operation. `POSITION` will shift one step in the direction
 set by the `DIRECTION` everytime there is a `CLOCK PULSE`.
 
-= Non Linear Sequencing =
+## Non Linear Sequencing
 
 Let any function control the order of the steps. For every `CLOCK PULSE`, the
 `Ext Position In` CV will be read and transformed to a value 0-15 witch will
@@ -58,7 +62,7 @@ be the new `POSITION`.
 Connecting an `OUT x` to `Ext Position In` lets you create an arbitrary step
 sequence.
 
-= Variable Time Sequencing =
+## Variable Time Sequencing
 
 Consider the following patch:
 
@@ -75,25 +79,23 @@ CV generating module.
 
 Also consider that this will work in _Non Linear_ mode as well.
 
-= Reset/Zero =
+## Reset/Zero
 
 `Reset` means goto step 0.
 `Zero` means goto no step, but next step is 0 (or 15, if `Direction` is `Backwards`).
 
-= Pulse Lengths =
+## Pulse Lengths
 
 * Pulse length for `OUT PULSE` are controlled by the `Pulse Length` jack/knobs.
 * Pulse length for `OUT E` and `OUT F` are controlled by the switches `Pulse`
   1. Full Cycle (No gaps)
   2. Pulse (Shortened pulses)
 
-= Pinout =
+## Pinout
 
 Sequencer Reset
 Sequencer Zero
 
-
-
-= Shift registers =
+## Shift registers
 
 * https://www.arduino.cc/en/tutorial/ShiftOut
