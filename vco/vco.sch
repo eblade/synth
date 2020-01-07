@@ -415,7 +415,7 @@ U 1 1 5E1164B0
 P 1375 1825
 F 0 "RV1" V 1375 1875 50  0000 R CNN
 F 1 "10K" H 1305 1825 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 1375 1825 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1375 1825 50  0001 C CNN
 F 3 "~" H 1375 1825 50  0001 C CNN
 F 4 "Track" H 1305 1734 50  0000 R CIN "Label"
 	1    1375 1825
@@ -1268,7 +1268,7 @@ U 1 1 5E314B0A
 P 7675 4350
 F 0 "RV8" V 7675 4400 50  0000 R CNN
 F 1 "20K" V 7575 4450 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK09L_Single_Vertical" H 7675 4350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7675 4350 50  0001 C CNN
 F 3 "~" H 7675 4350 50  0001 C CNN
 F 4 "HFTRACK" V 7475 4450 50  0000 R CIN "Label"
 	1    7675 4350
