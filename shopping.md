@@ -14,3 +14,4 @@
 * Inductor, 10mH
 * Capacitor, ceramic 22pF (for crystals)
 * LM4040-AIZ Micro Precision Shunt Voltage Reference TO-92
+* M3 insert nuts!
