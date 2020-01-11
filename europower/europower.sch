@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:europower-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -119,12 +120,12 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR0102
 U 1 1 5E147E8D
-P 5225 2700
-F 0 "#PWR0102" H 5225 2550 50  0001 C CNN
-F 1 "+12V" H 5240 2873 50  0000 C CNN
-F 2 "" H 5225 2700 50  0001 C CNN
-F 3 "" H 5225 2700 50  0001 C CNN
-	1    5225 2700
+P 5225 1450
+F 0 "#PWR0102" H 5225 1300 50  0001 C CNN
+F 1 "+12V" H 5240 1623 50  0000 C CNN
+F 2 "" H 5225 1450 50  0001 C CNN
+F 3 "" H 5225 1450 50  0001 C CNN
+	1    5225 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -141,8 +142,6 @@ $EndComp
 Wire Wire Line
 	5225 3950 5225 4075
 Connection ~ 5225 3950
-Wire Wire Line
-	5225 2800 5225 2700
 Connection ~ 5225 2800
 $Comp
 L Regulator_Linear:L7805 U1
@@ -179,16 +178,14 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0104
 U 1 1 5E14B273
-P 7150 2700
-F 0 "#PWR0104" H 7150 2550 50  0001 C CNN
-F 1 "+5V" H 7165 2873 50  0000 C CNN
-F 2 "" H 7150 2700 50  0001 C CNN
-F 3 "" H 7150 2700 50  0001 C CNN
-	1    7150 2700
+P 7150 1525
+F 0 "#PWR0104" H 7150 1375 50  0001 C CNN
+F 1 "+5V" H 7165 1698 50  0000 C CNN
+F 2 "" H 7150 1525 50  0001 C CNN
+F 3 "" H 7150 1525 50  0001 C CNN
+	1    7150 1525
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7150 2800 7150 2700
 Connection ~ 7150 2800
 $Comp
 L power:GND #PWR0105
@@ -382,4 +379,29 @@ Wire Wire Line
 Connection ~ 6350 3400
 Wire Wire Line
 	6350 3400 7150 3400
+$Comp
+L Regulator_Linear:L7805 U?
+U 1 1 5E1A06BE
+P 6350 1725
+F 0 "U?" H 6350 1967 50  0000 C CNN
+F 1 "L7805" H 6350 1876 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Horizontal1" H 6375 1575 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 6350 1675 50  0001 C CNN
+	1    6350 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1725 7150 1725
+Wire Wire Line
+	7150 1525 7150 1725
+Connection ~ 7150 1725
+Wire Wire Line
+	7150 1725 7150 2800
+Wire Wire Line
+	5225 1450 5225 1725
+Wire Wire Line
+	6050 1725 5225 1725
+Connection ~ 5225 1725
+Wire Wire Line
+	5225 1725 5225 2800
 $EndSCHEMATC
