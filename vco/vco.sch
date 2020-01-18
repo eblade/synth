@@ -20,7 +20,7 @@ U 1 1 5E10ED30
 P 3150 2225
 F 0 "U3" H 2825 2875 50  0000 C CNN
 F 1 "AS3340" H 3400 2875 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 3650 1925 50  0001 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 3650 1925 50  0001 C CNN
 F 3 "http://www.alfarzpp.lv/eng/sc/AS3340.pdf" H 3750 1775 50  0001 C CNN
 	1    3150 2225
 	1    0    0    -1  
@@ -394,7 +394,7 @@ U 3 1 5E128F04
 P 4725 1275
 F 0 "U1" H 4725 1642 50  0000 C CNN
 F 1 "TL074" H 4725 1551 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 4675 1375 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4675 1375 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4775 1475 50  0001 C CNN
 	3    4725 1275
 	1    0    0    -1  
@@ -405,7 +405,7 @@ U 4 1 5E129EE0
 P 4725 1975
 F 0 "U1" H 4725 2342 50  0000 C CNN
 F 1 "TL074" H 4725 2251 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 4675 2075 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4675 2075 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4775 2175 50  0001 C CNN
 	4    4725 1975
 	1    0    0    -1  
@@ -428,7 +428,7 @@ U 1 1 5E12F9BE
 P 6450 2925
 F 0 "U1" H 6450 3292 50  0000 C CNN
 F 1 "TL074" H 6450 3201 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 6400 3025 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6400 3025 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6500 3125 50  0001 C CNN
 	1    6450 2925
 	1    0    0    -1  
@@ -439,7 +439,7 @@ U 2 1 5E131180
 P 8125 2925
 F 0 "U1" H 8125 3292 50  0000 C CNN
 F 1 "TL074" H 8125 3201 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 8075 3025 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 8075 3025 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8175 3125 50  0001 C CNN
 	2    8125 2925
 	1    0    0    -1  
@@ -470,7 +470,7 @@ U 1 1 5E135FB5
 P 4750 2925
 F 0 "U2" H 4750 3292 50  0000 C CNN
 F 1 "TL072" H 4750 3201 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4700 3025 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4700 3025 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4800 3125 50  0001 C CNN
 	1    4750 2925
 	1    0    0    -1  
@@ -754,7 +754,7 @@ U 5 1 5E1ADD58
 P 1600 5200
 F 0 "U1" H 1558 5246 50  0000 L CNN
 F 1 "TL074" H 1558 5155 50  0000 L CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 1550 5300 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 1550 5300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1650 5400 50  0001 C CNN
 	5    1600 5200
 	1    0    0    -1  
@@ -925,7 +925,7 @@ U 3 1 5E1C930D
 P 2650 5200
 F 0 "U2" H 2608 5246 50  0000 L CNN
 F 1 "TL072" H 2608 5155 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 2600 5300 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 2600 5300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2700 5400 50  0001 C CNN
 	3    2650 5200
 	1    0    0    -1  
@@ -1033,7 +1033,7 @@ U 2 1 5E24BC63
 P 4900 4500
 F 0 "U2" H 4900 4867 50  0000 C CNN
 F 1 "TL072" H 4900 4776 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4850 4600 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_Socket" H 4850 4600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4950 4700 50  0001 C CNN
 	2    4900 4500
 	1    0    0    -1  
@@ -1636,17 +1636,6 @@ F 3 "~" H 2875 7025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5E216479
-P 2875 7225
-F 0 "H2" H 2975 7271 50  0000 L CNN
-F 1 "MountingHole" H 2975 7180 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2875 7225 50  0001 C CNN
-F 3 "~" H 2875 7225 50  0001 C CNN
-	1    2875 7225
-	1    0    0    -1  
-$EndComp
-$Comp
 L Mechanical:MountingHole H3
 U 1 1 5E2169CD
 P 2875 7425
@@ -1655,17 +1644,6 @@ F 1 "MountingHole" H 2975 7380 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 2875 7425 50  0001 C CNN
 F 3 "~" H 2875 7425 50  0001 C CNN
 	1    2875 7425
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5E216F3F
-P 2875 7625
-F 0 "H4" H 2975 7671 50  0000 L CNN
-F 1 "MountingHole" H 2975 7580 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 2875 7625 50  0001 C CNN
-F 3 "~" H 2875 7625 50  0001 C CNN
-	1    2875 7625
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
