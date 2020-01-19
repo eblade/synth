@@ -1502,14 +1502,14 @@ NoConn ~ 9675 4350
 NoConn ~ 9675 4950
 NoConn ~ 9675 5550
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J1
+L Connector_Generic:Conn_02x05_Odd_Even J1
 U 1 1 5E3CD2B4
-P 1600 6725
-F 0 "J1" H 1650 7142 50  0000 C CNN
-F 1 "Filtered Power" H 1650 7051 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 1600 6725 50  0001 C CNN
-F 3 "~" H 1600 6725 50  0001 C CNN
-	1    1600 6725
+P 1600 6825
+F 0 "J1" H 1650 7242 50  0000 C CNN
+F 1 "Filtered Power" H 1650 7151 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 1600 6825 50  0001 C CNN
+F 3 "~" H 1600 6825 50  0001 C CNN
+	1    1600 6825
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1400 6525
@@ -1624,4 +1624,72 @@ F 3 "" H 1400 6925 50  0001 C CNN
 	1    1400 6925
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:CP C8
+U 1 1 5E3F140A
+P 2700 6750
+F 0 "C8" H 2818 6796 50  0000 L CNN
+F 1 "10uF" H 2818 6705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2738 6600 50  0001 C CNN
+F 3 "~" H 2700 6750 50  0001 C CNN
+	1    2700 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5E3F2AF2
+P 3125 6750
+F 0 "C9" H 3243 6796 50  0000 L CNN
+F 1 "10uF" H 3243 6705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3163 6600 50  0001 C CNN
+F 3 "~" H 3125 6750 50  0001 C CNN
+	1    3125 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5E3F34A0
+P 2700 6600
+F 0 "#PWR01" H 2700 6450 50  0001 C CNN
+F 1 "+12V" V 2715 6728 50  0000 L CNN
+F 2 "" H 2700 6600 50  0001 C CNN
+F 3 "" H 2700 6600 50  0001 C CNN
+	1    2700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR04
+U 1 1 5E3F4152
+P 3125 6900
+F 0 "#PWR04" H 3125 7000 50  0001 C CNN
+F 1 "-12V" V 3140 7028 50  0000 L CNN
+F 2 "" H 3125 6900 50  0001 C CNN
+F 3 "" H 3125 6900 50  0001 C CNN
+	1    3125 6900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E3F4D70
+P 2700 6900
+F 0 "#PWR02" H 2700 6650 50  0001 C CNN
+F 1 "GND" V 2705 6772 50  0000 R CNN
+F 2 "" H 2700 6900 50  0001 C CNN
+F 3 "" H 2700 6900 50  0001 C CNN
+	1    2700 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5E3F59B8
+P 3125 6600
+F 0 "#PWR03" H 3125 6350 50  0001 C CNN
+F 1 "GND" V 3130 6472 50  0000 R CNN
+F 2 "" H 3125 6600 50  0001 C CNN
+F 3 "" H 3125 6600 50  0001 C CNN
+	1    3125 6600
+	-1   0    0    1   
+$EndComp
+Text Notes 7050 6675 0    50   ~ 0
+Basically a copy of LMNCs Performance VCO but meant for the Eurorack format
 $EndSCHEMATC
