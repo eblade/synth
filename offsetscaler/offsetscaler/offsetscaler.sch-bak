@@ -993,10 +993,10 @@ Wire Wire Line
 Wire Wire Line
 	7050 4800 7100 4800
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole H?
 U 1 1 5E2E6D6D
 P 900 3850
-F 0 "H1" H 1000 3896 50  0000 L CNN
+F 0 "H?" H 1000 3896 50  0000 L CNN
 F 1 "MountingHole" H 1000 3805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 900 3850 50  0001 C CNN
 F 3 "~" H 900 3850 50  0001 C CNN
@@ -1004,20 +1004,14 @@ F 3 "~" H 900 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L Mechanical:MountingHole H?
 U 1 1 5E2E762A
 P 900 4100
-F 0 "H2" H 1000 4146 50  0000 L CNN
+F 0 "H?" H 1000 4146 50  0000 L CNN
 F 1 "MountingHole" H 1000 4055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 900 4100 50  0001 C CNN
 F 3 "~" H 900 4100 50  0001 C CNN
 	1    900  4100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5300 2100
-NoConn ~ 5250 4800
-NoConn ~ 10050 5450
-NoConn ~ 10050 4800
-NoConn ~ 10100 2100
-NoConn ~ 10100 2750
 $EndSCHEMATC

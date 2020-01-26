@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name offsetscaler-rescue)(type Legacy)(uri ${KIPRJMOD}/offsetscaler-rescue.lib)(options "")(descr ""))
+)
