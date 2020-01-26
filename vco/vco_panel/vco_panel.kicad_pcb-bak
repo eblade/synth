@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 31)
+    (drawings 36)
     (tracks 0)
     (zones 0)
     (modules 17)
@@ -370,6 +370,11 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 6 6) (drill 6) (layers *.Cu *.Mask))
   )
 
+  (gr_circle (center 57.15 62.86754) (end 61.4 62.86754) (layer F.Fab) (width 0.15) (tstamp 5E24CF15))
+  (gr_circle (center 57.15 137.79246) (end 61.4 137.79246) (layer F.Fab) (width 0.15))
+  (gr_circle (center 74.97064 117.46738) (end 89.97064 117.46738) (layer F.Fab) (width 0.15) (tstamp 5E24CDC0))
+  (gr_circle (center 125.476 117.348) (end 140.476 117.348) (layer F.Fab) (width 0.15) (tstamp 5E24CD97))
+  (gr_circle (center 110.363 72.009) (end 125.363 72.009) (layer F.Fab) (width 0.15))
   (gr_text Octave (at 110.236 55.118) (layer F.SilkS)
     (effects (font (size 2.032 2.032) (thickness 0.3048)))
   )

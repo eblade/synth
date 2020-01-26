@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 36)
+    (drawings 42)
     (tracks 0)
     (zones 0)
     (modules 17)
@@ -370,6 +370,14 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 6 6) (drill 6) (layers *.Cu *.Mask))
   )
 
+  (gr_line (start 110.236 71.882) (end 74.93 117.602) (layer F.SilkS) (width 0.12) (tstamp 5E2DDADD))
+  (gr_line (start 125.476 117.602) (end 110.236 71.882) (layer F.SilkS) (width 0.12))
+  (gr_line (start 74.93 117.602) (end 125.476 117.602) (layer F.SilkS) (width 0.12))
+  (gr_line (start 57.15 137.668) (end 74.93 117.602) (layer F.SilkS) (width 0.12))
+  (gr_line (start 57.15 62.992) (end 57.15 137.668) (layer F.SilkS) (width 0.12))
+  (gr_text "LMNC // Performance VCO" (at 51.816 54.864) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
+  )
   (gr_circle (center 57.15 62.86754) (end 61.4 62.86754) (layer F.Fab) (width 0.15) (tstamp 5E24CF15))
   (gr_circle (center 57.15 137.79246) (end 61.4 137.79246) (layer F.Fab) (width 0.15))
   (gr_circle (center 74.97064 117.46738) (end 89.97064 117.46738) (layer F.Fab) (width 0.15) (tstamp 5E24CDC0))
@@ -381,7 +389,7 @@
   (gr_text Track (at 143.256 114.3) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "HF Track" (at 120.904 93.98) (layer F.SilkS)
+  (gr_text "HF Track" (at 110.744 93.98) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text Sync (at 132.334 69.85) (layer F.SilkS) (tstamp 5E24CBF3)
