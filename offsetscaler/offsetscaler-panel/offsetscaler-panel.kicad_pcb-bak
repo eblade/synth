@@ -11,8 +11,8 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -376,7 +376,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (gr_text "y = k(x + m)" (at 163.576 113.03) (layer F.SilkS) (tstamp 5E4210D1)
+  (gr_text "y = k(x + m)" (at 166.878 113.03) (layer F.SilkS) (tstamp 5E4210D1)
     (effects (font (size 3.048 3.048) (thickness 0.762) italic) (justify left))
   )
   (gr_text m (at 169.164 77.47) (layer F.SilkS) (tstamp 5E41BEB4)

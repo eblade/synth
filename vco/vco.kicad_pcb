@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.381)
+    (last_trace_width 0.25)
     (user_trace_width 0.381)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -66,7 +66,7 @@
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
-      (usegerberattributes false)
+      (usegerberattributes true)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
       (excludeedgelayer true)
@@ -74,7 +74,7 @@
       (plotframeref false)
       (viasonmask false)
       (mode 1)
-      (useauxorigin false)
+      (useauxorigin true)
       (hpglpennumber 1)
       (hpglpenspeed 20)
       (hpglpendiameter 15.000000)
@@ -87,9 +87,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory "plots/"))
   )
 
   (net 0 "")
@@ -3475,7 +3475,7 @@
   (segment (start 106.934 105.156) (end 129.032 127.254) (width 0.25) (layer B.Cu) (net 54))
   (segment (start 106.934 100.076) (end 106.934 105.156) (width 0.25) (layer B.Cu) (net 54))
 
-  (zone (net 4) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 4) (net_name GND) (layer B.Cu) (tstamp 5E849BE0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
