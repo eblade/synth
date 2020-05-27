@@ -1,1 +1,7 @@
 gerber
+plots
+*.kicad_pcb-bak
+*.pro-bak
+*.sch-bak
+*.zip
+fp-info-cache
