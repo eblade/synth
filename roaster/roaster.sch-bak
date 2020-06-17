@@ -615,7 +615,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 4350 6750 4450
 Text Label 6800 4150 2    50   ~ 0
-SCK
+CLK
 Wire Wire Line
 	6875 4150 6800 4150
 Text Label 6775 4050 2    50   ~ 0
@@ -1050,7 +1050,10 @@ Text Label 3875 1350 0    50   ~ 0
 LED_RUNNING
 NoConn ~ 3000 3250
 NoConn ~ 3000 3350
-NoConn ~ 3000 4450
 Text Label 7875 1850 0    50   ~ 0
 A0
+Text Label 3075 4450 0    50   ~ 0
+CLK
+Wire Wire Line
+	3000 4450 3075 4450
 $EndSCHEMATC

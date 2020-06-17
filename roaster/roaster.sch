@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
+L roaster-rescue:ATmega328P-PU-MCU_Microchip_ATmega U1
 U 1 1 5E9CAAAF
 P 2400 3350
 F 0 "U1" H 1756 3396 50  0000 R CNN
