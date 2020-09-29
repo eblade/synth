@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name roaster-rescue)(type Legacy)(uri ${KIPRJMOD}/roaster-rescue.lib)(options "")(descr ""))
+)
