@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:brain-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U?
+L brain-rescue:ATmega328P-PU-MCU_Microchip_ATmega U?
 U 1 1 5E36C56A
 P 2850 3350
 AR Path="/5E36C56A" Ref="U?"  Part="1" 

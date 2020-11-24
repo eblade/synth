@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:interface-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -453,11 +452,11 @@ P 1250 1000
 AR Path="/5E04C2A5" Ref="D1"  Part="1" 
 AR Path="/5DDA0F22/5E04C2A5" Ref="D?"  Part="1" 
 F 0 "D1" V 1195 1079 50  0000 L CNN
-F 1 "LED_INT_CLOCK" V 1286 1079 50  0000 L CNN
+F 1 "LED_INT_CLOCK" V 1250 300 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 1250 1000 50  0001 C CNN
 F 3 "~" H 1250 1000 50  0001 C CNN
 	1    1250 1000
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR04
@@ -549,11 +548,11 @@ P 1250 5800
 AR Path="/5E04C2DE" Ref="D2"  Part="1" 
 AR Path="/5DDA0F22/5E04C2DE" Ref="D?"  Part="1" 
 F 0 "D2" V 1195 5879 50  0000 L CNN
-F 1 "LED_STEP_PULSE" V 1286 5879 50  0000 L CNN
+F 1 "LED_STEP_PULSE" V 1250 5100 50  0000 L CNN
 F 2 "LED_THT:LED_D3.0mm" H 1250 5800 50  0001 C CNN
 F 3 "~" H 1250 5800 50  0001 C CNN
 	1    1250 5800
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR06
