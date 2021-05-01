@@ -2310,8 +2310,6 @@ Text Notes 7050 6850 0    50   ~ 0
 Quad VCA + Mixer\nCV inputs are offsetted\nEach output goes to mixer when not connected
 Text Notes 7350 7500 0    50   ~ 0
 Quad VCA with Mixer
-Text Notes 9250 7100 0    50   ~ 0
-TODO\nPower\nSource 100KA potentiometer (also test direction)
 $Comp
 L power:GND #PWR020
 U 1 1 607C9A7B
