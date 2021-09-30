@@ -1330,7 +1330,7 @@ U 1 1 61881F7B
 P 8800 5250
 F 0 "R33" V 9050 5250 50  0000 C CNN
 F 1 "RAMP 20K" V 8950 5250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8730 5250 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" V 8730 5250 50  0001 C CNN
 F 3 "~" H 8800 5250 50  0001 C CNN
 	1    8800 5250
 	0    1    1    0   
