@@ -1938,7 +1938,7 @@ U 1 1 61AB25ED
 P 7850 10000
 F 0 "J5" H 7900 10417 50  0000 C CNN
 F 1 "EURO" H 7900 10326 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles" H 7850 10000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 7850 10000 50  0001 C CNN
 F 3 "~" H 7850 10000 50  0001 C CNN
 	1    7850 10000
 	1    0    0    -1  
