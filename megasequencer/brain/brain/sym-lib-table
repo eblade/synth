@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name brain-rescue)(type Legacy)(uri ${KIPRJMOD}/brain-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "brain-rescue")(type "KiCad")(uri "${KIPRJMOD}/brain-rescue.kicad_sym")(options "")(descr ""))
 )
